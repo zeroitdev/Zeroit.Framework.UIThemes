@@ -7,7 +7,23 @@
 // Last Modified On : 02-18-2019
 // ***********************************************************************
 // <copyright file="Theme.cs" company="Zeroit Dev Technologies">
-//     Copyright © Zeroit Dev Technologies  2017. All Rights Reserved.
+//    This program is for creating Theme controls.
+//    Copyright Â©  2017  Zeroit Dev Technologies
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+//    You can contact me at zeroitdevnet@gmail.com or zeroitdev@outlook.com
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
@@ -404,7 +420,7 @@ namespace Zeroit.Framework.UIThemes.GameBooster
             }
 
 
-            e.Graphics.DrawString("ü", new Font("Wingdings", 13, FontStyle.Regular), Brushes.Black, new Point(4, 2));
+            e.Graphics.DrawString("ï¿½", new Font("Wingdings", 13, FontStyle.Regular), Brushes.Black, new Point(4, 2));
         }
 
         protected override void OnRenderSeparator(System.Windows.Forms.ToolStripSeparatorRenderEventArgs e)

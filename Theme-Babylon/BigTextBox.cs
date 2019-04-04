@@ -36,16 +36,16 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  Big TextBox 
 
     [DefaultEvent("TextChanged")]
-    public class iTalkTextBoxBig : Control
+    public class BabylonTextBoxBig : Control
     {
         #region  Variables 
 
-        public TextBox iTalkTB = new TextBox();
+        public TextBox BabylonTB = new TextBox();
         private GraphicsPath Shape;
         private int _maxchars = 32767;
         private bool _ReadOnly;
@@ -81,7 +81,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
             set
             {
                 _maxchars = value;
-                iTalkTB.MaxLength = MaxLength;
+                BabylonTB.MaxLength = MaxLength;
                 Invalidate();
             }
         }
@@ -94,7 +94,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
             }
             set
             {
-                iTalkTB.UseSystemPasswordChar = UseSystemPasswordChar;
+                BabylonTB.UseSystemPasswordChar = UseSystemPasswordChar;
                 isPasswordMasked = value;
                 Invalidate();
             }
@@ -108,9 +108,9 @@ namespace Zeroit.Framework.UIThemes.iTalk
             set
             {
                 _ReadOnly = value;
-                if (iTalkTB != null)
+                if (BabylonTB != null)
                 {
-                    iTalkTB.ReadOnly = value;
+                    BabylonTB.ReadOnly = value;
                 }
             }
         }
@@ -123,17 +123,17 @@ namespace Zeroit.Framework.UIThemes.iTalk
             set
             {
                 _Multiline = value;
-                if (iTalkTB != null)
+                if (BabylonTB != null)
                 {
-                    iTalkTB.Multiline = value;
+                    BabylonTB.Multiline = value;
 
                     if (value)
                     {
-                        iTalkTB.Height = Height - 23;
+                        BabylonTB.Height = Height - 23;
                     }
                     else
                     {
-                        Height = iTalkTB.Height + 23;
+                        Height = BabylonTB.Height + 23;
                     }
                 }
             }
@@ -160,11 +160,11 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
                 if (Image == null)
                 {
-                    iTalkTB.Location = new Point(8, 10);
+                    BabylonTB.Location = new Point(8, 10);
                 }
                 else
                 {
-                    iTalkTB.Location = new Point(35, 11);
+                    BabylonTB.Location = new Point(35, 11);
                 }
                 Invalidate();
             }
@@ -190,14 +190,14 @@ namespace Zeroit.Framework.UIThemes.iTalk
         protected override void OnForeColorChanged(System.EventArgs e)
         {
             base.OnForeColorChanged(e);
-            iTalkTB.ForeColor = ForeColor;
+            BabylonTB.ForeColor = ForeColor;
             Invalidate();
         }
 
         protected override void OnFontChanged(System.EventArgs e)
         {
             base.OnFontChanged(e);
-            iTalkTB.Font = Font;
+            BabylonTB.Font = Font;
         }
 
         protected override void OnPaintBackground(PaintEventArgs e)
@@ -209,12 +209,12 @@ namespace Zeroit.Framework.UIThemes.iTalk
         {
             if (e.Control && e.KeyCode == Keys.A)
             {
-                iTalkTB.SelectAll();
+                BabylonTB.SelectAll();
                 e.SuppressKeyPress = true;
             }
             if (e.Control && e.KeyCode == Keys.C)
             {
-                iTalkTB.Copy();
+                BabylonTB.Copy();
                 e.SuppressKeyPress = true;
             }
         }
@@ -224,11 +224,11 @@ namespace Zeroit.Framework.UIThemes.iTalk
             base.OnResize(e);
             if (_Multiline)
             {
-                iTalkTB.Height = Height - 23;
+                BabylonTB.Height = Height - 23;
             }
             else
             {
-                Height = iTalkTB.Height + 23;
+                Height = BabylonTB.Height + 23;
             }
 
             Shape = new GraphicsPath();
@@ -242,40 +242,40 @@ namespace Zeroit.Framework.UIThemes.iTalk
         protected override void OnGotFocus(System.EventArgs e)
         {
             base.OnGotFocus(e);
-            iTalkTB.Focus();
+            BabylonTB.Focus();
         }
 
         public void _TextChanged(object sender, EventArgs e)
         {
-            Text = iTalkTB.Text;
+            Text = BabylonTB.Text;
         }
 
         public void _BaseTextChanged(object sender, EventArgs e)
         {
-            iTalkTB.Text = Text;
+            BabylonTB.Text = Text;
         }
 
         #endregion
 
         public void AddTextBox()
         {
-            iTalkTB.Location = new Point(7, 10);
-            iTalkTB.Text = string.Empty;
-            iTalkTB.BorderStyle = BorderStyle.None;
-            iTalkTB.TextAlign = HorizontalAlignment.Left;
-            iTalkTB.Font = new Font("Tahoma", 11);
-            iTalkTB.UseSystemPasswordChar = UseSystemPasswordChar;
-            iTalkTB.Multiline = false;
-            iTalkTB.KeyDown += _OnKeyDown;
+            BabylonTB.Location = new Point(7, 10);
+            BabylonTB.Text = string.Empty;
+            BabylonTB.BorderStyle = BorderStyle.None;
+            BabylonTB.TextAlign = HorizontalAlignment.Left;
+            BabylonTB.Font = new Font("Tahoma", 11);
+            BabylonTB.UseSystemPasswordChar = UseSystemPasswordChar;
+            BabylonTB.Multiline = false;
+            BabylonTB.KeyDown += _OnKeyDown;
         }
 
-        public iTalkTextBoxBig()
+        public BabylonTextBoxBig()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             SetStyle(ControlStyles.UserPaint, true);
 
             AddTextBox();
-            Controls.Add(iTalkTB);
+            Controls.Add(BabylonTB);
 
             P1 = new Pen(Color.FromArgb(180, 180, 180));
             B1 = new SolidBrush(Color.White);
@@ -300,15 +300,15 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
             if (Image == null)
             {
-                iTalkTB.Width = Width - 18;
+                BabylonTB.Width = Width - 18;
             }
             else
             {
-                iTalkTB.Width = Width - 45;
+                BabylonTB.Width = Width - 45;
             }
 
-            iTalkTB.TextAlign = TextAlignment;
-            iTalkTB.UseSystemPasswordChar = UseSystemPasswordChar;
+            BabylonTB.TextAlign = TextAlignment;
+            BabylonTB.UseSystemPasswordChar = UseSystemPasswordChar;
 
             G.Clear(Color.Transparent);
             G.FillPath(B1, Shape); // Draw background
@@ -333,7 +333,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
             else
                 EventsSubscribed = true;
 
-            iTalkTB.TextChanged += _TextChanged;
+            BabylonTB.TextChanged += _TextChanged;
             base.TextChanged += _BaseTextChanged;
         }
 

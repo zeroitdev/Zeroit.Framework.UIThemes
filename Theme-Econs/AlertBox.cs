@@ -32,14 +32,14 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
 
-    public class MetroDiskAlertBox : Control
+    public class EconsAlertBox : Control
     {
 
         /// <summary>
@@ -201,7 +201,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color InfoText = Color.FromArgb(97, 185, 186);
         #endregion
 
-        public MetroDiskAlertBox()
+        public EconsAlertBox()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;

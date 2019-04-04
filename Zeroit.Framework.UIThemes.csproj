@@ -229,94 +229,94 @@
     <Compile Include="Theme-HighRoller\Theme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ControlBox.cs">
+    <Compile Include="Theme-Babylon\ControlBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Button1.cs">
+    <Compile Include="Theme-Babylon\Button1.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Button2.cs">
+    <Compile Include="Theme-Babylon\Button2.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Toggle.cs">
+    <Compile Include="Theme-Babylon\Toggle.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Label.cs">
+    <Compile Include="Theme-Babylon\Label.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\LinkLabel.cs">
+    <Compile Include="Theme-Babylon\LinkLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Header.cs">
+    <Compile Include="Theme-Babylon\Header.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\BigTextBox.cs">
+    <Compile Include="Theme-Babylon\BigTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\SmallTextBox.cs">
+    <Compile Include="Theme-Babylon\SmallTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\RichTextBox.cs">
+    <Compile Include="Theme-Babylon\RichTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\NumericUpDown.cs">
+    <Compile Include="Theme-Babylon\NumericUpDown.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ChatBubbleLeft.cs">
+    <Compile Include="Theme-Babylon\ChatBubbleLeft.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ChatBubbleRight.cs">
+    <Compile Include="Theme-Babylon\ChatBubbleRight.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Seperator.cs">
+    <Compile Include="Theme-Babylon\Seperator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Panel.cs">
+    <Compile Include="Theme-Babylon\Panel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\GroupBox.cs">
+    <Compile Include="Theme-Babylon\GroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\CheckBox.cs">
+    <Compile Include="Theme-Babylon\CheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\RadioButton.cs">
+    <Compile Include="Theme-Babylon\RadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\NotificationNumber.cs">
+    <Compile Include="Theme-Babylon\NotificationNumber.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ListView.cs">
+    <Compile Include="Theme-Babylon\ListView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ComboBox.cs">
+    <Compile Include="Theme-Babylon\ComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\CircularProgressBar.cs">
+    <Compile Include="Theme-Babylon\CircularProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ProgressIndicator.cs">
+    <Compile Include="Theme-Babylon\ProgressIndicator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\Tab.cs">
+    <Compile Include="Theme-Babylon\Tab.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\TrackBar.cs">
+    <Compile Include="Theme-Babylon\TrackBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\MenuStrip.cs">
+    <Compile Include="Theme-Babylon\MenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\ContextMenuStrip.cs">
+    <Compile Include="Theme-Babylon\ContextMenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\StatusStrip.cs">
+    <Compile Include="Theme-Babylon\StatusStrip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\InfoIcon.cs">
+    <Compile Include="Theme-Babylon\InfoIcon.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-iTalk\TickIcon.cs">
+    <Compile Include="Theme-Babylon\TickIcon.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-Morphic\Button.cs">
@@ -1113,64 +1113,64 @@
     <Compile Include="Theme-Bullion\Theme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\ControlBox.cs">
+    <Compile Include="Theme-Bambara\ControlBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\RadioButton.cs">
+    <Compile Include="Theme-Bambara\RadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\CheckBox.cs">
+    <Compile Include="Theme-Bambara\CheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\Button.cs">
+    <Compile Include="Theme-Bambara\Button.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\Panel.cs">
+    <Compile Include="Theme-Bambara\Panel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\GroupBox.cs">
+    <Compile Include="Theme-Bambara\GroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\ProgressBar.cs">
+    <Compile Include="Theme-Bambara\ProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\Label.cs">
+    <Compile Include="Theme-Bambara\Label.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\Tab.cs">
+    <Compile Include="Theme-Bambara\Tab.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\VerticalTab.cs">
+    <Compile Include="Theme-Bambara\VerticalTab.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\Toggle.cs">
+    <Compile Include="Theme-Bambara\Toggle.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\ComboBox.cs">
+    <Compile Include="Theme-Bambara\ComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\TextBox.cs">
+    <Compile Include="Theme-Bambara\TextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\VerticalProgress.cs">
+    <Compile Include="Theme-Bambara\VerticalProgress.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\HorizontalSeperator.cs">
+    <Compile Include="Theme-Bambara\HorizontalSeperator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\VerticalSeperator.cs">
+    <Compile Include="Theme-Bambara\VerticalSeperator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\ListBox.cs">
+    <Compile Include="Theme-Bambara\ListBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\ProgressButton.cs">
+    <Compile Include="Theme-Bambara\ProgressButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\AlertBox.cs">
+    <Compile Include="Theme-Bambara\AlertBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-ButterScotch\Theme.cs" />
+    <Compile Include="Theme-Bambara\Theme.cs" />
     <Compile Include="Theme-CarbonFibre\Label.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -2440,68 +2440,68 @@
     <Compile Include="Theme-Metal\ProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\GroupBox.cs">
+    <Compile Include="Theme-Econs\GroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Button.cs">
+    <Compile Include="Theme-Econs\Button.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\StickyButton.cs" />
-    <Compile Include="Theme-MetroDisk\Toggle.cs">
+    <Compile Include="Theme-Econs\StickyButton.cs" />
+    <Compile Include="Theme-Econs\Toggle.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\RadioButton.cs">
+    <Compile Include="Theme-Econs\RadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\CheckBox.cs">
+    <Compile Include="Theme-Econs\CheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\TextBox.cs">
+    <Compile Include="Theme-Econs\TextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Tab.cs">
+    <Compile Include="Theme-Econs\Tab.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\AlertBox.cs">
+    <Compile Include="Theme-Econs\AlertBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\ProgressBar.cs">
+    <Compile Include="Theme-Econs\ProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\ComboBox.cs">
+    <Compile Include="Theme-Econs\ComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Numeric.cs">
+    <Compile Include="Theme-Econs\Numeric.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\ListBox.cs">
+    <Compile Include="Theme-Econs\ListBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\ContextmenuStrip.cs">
+    <Compile Include="Theme-Econs\ContextmenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\TrackBar.cs">
+    <Compile Include="Theme-Econs\TrackBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\StatusBar.cs">
+    <Compile Include="Theme-Econs\StatusBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Label.cs">
+    <Compile Include="Theme-Econs\Label.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\TreeView.cs">
+    <Compile Include="Theme-Econs\TreeView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Icon.cs">
+    <Compile Include="Theme-Econs\Icon.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\LabelButton.cs">
+    <Compile Include="Theme-Econs\LabelButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Dialog.cs">
+    <Compile Include="Theme-Econs\Dialog.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\SimpleButton.cs">
+    <Compile Include="Theme-Econs\SimpleButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-MetroUI\Button.cs">
@@ -2723,7 +2723,7 @@
     <Compile Include="Theme-MetroUI\Theme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-MetroDisk\Theme.cs">
+    <Compile Include="Theme-Econs\Theme.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-Modern\Theme.cs" />
@@ -3447,38 +3447,38 @@
     </Compile>
     <Compile Include="Theme-Tennis\Theme.cs" />
     <Compile Include="Theme-Black\Theme.cs" />
-    <Compile Include="Theme-8Ball\CheckBox.cs">
+    <Compile Include="Theme-Exon\CheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\ComboBox.cs">
+    <Compile Include="Theme-Exon\ComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\ContainerControl.cs">
+    <Compile Include="Theme-Exon\ContainerControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\Button.cs">
+    <Compile Include="Theme-Exon\Button.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\GroupBox.cs">
+    <Compile Include="Theme-Exon\GroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\Helper\Drawing.cs" />
-    <Compile Include="Theme-8Ball\Label.cs">
+    <Compile Include="Theme-Exon\Helper\Drawing.cs" />
+    <Compile Include="Theme-Exon\Label.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\ProgressBar.cs">
+    <Compile Include="Theme-Exon\ProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\RadioButton.cs">
+    <Compile Include="Theme-Exon\RadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\Seperator.cs">
+    <Compile Include="Theme-Exon\Seperator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\TabControl.cs">
+    <Compile Include="Theme-Exon\TabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-8Ball\TextBox.cs">
+    <Compile Include="Theme-Exon\TextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-Adobe\Box.cs">
@@ -3498,26 +3498,26 @@
     <Compile Include="Theme-Adobe\TitleBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\BigButton.cs">
+    <Compile Include="Theme-ASC\BigButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\Button.cs">
+    <Compile Include="Theme-ASC\Button.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\CheckBox.cs">
+    <Compile Include="Theme-ASC\CheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\Helper\Helper.cs" />
-    <Compile Include="Theme-Advanced System Core\ProgressBar.cs">
+    <Compile Include="Theme-ASC\Helper\Helper.cs" />
+    <Compile Include="Theme-ASC\ProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\Switch.cs">
+    <Compile Include="Theme-ASC\Switch.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\TabControl.cs">
+    <Compile Include="Theme-ASC\TabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Theme-Advanced System Core\ThemeContainer.cs">
+    <Compile Include="Theme-ASC\ThemeContainer.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-Advantium\Button.cs">
@@ -3770,11 +3770,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-Ubuntu\Theme.cs" />
-    <Compile Include="Forms\8Ball Theme.cs" />
+    <Compile Include="Forms\Exon.cs" />
     <Compile Include="Forms\Adobe Theme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\Advanced System Core Theme.cs" />
+    <Compile Include="Forms\ASC Theme.cs" />
     <Compile Include="Forms\Advantium Theme.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -3825,7 +3825,7 @@
     <Compile Include="Forms\Bullion Theme.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\Butterscotch Theme.cs" />
+    <Compile Include="Forms\Econs Theme.cs" />
     <Compile Include="Forms\Carbon Fibre Theme.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -4405,7 +4405,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Theme-GreyWash\Theme.cs" />
-    <Compile Include="Theme-iTalk\Theme.cs" />
+    <Compile Include="Theme-Babylon\Theme.cs" />
     <Compile Include="Theme-Morphic\Theme.cs" />
     <Compile Include="Theme-Nexus\Theme.cs" />
     <Compile Include="Theme-Mpontuo\Theme.cs">

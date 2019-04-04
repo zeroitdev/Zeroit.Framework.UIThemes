@@ -32,10 +32,10 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallProgressbar : Control
+    public class ExonBlazeProgressbar : Control
 {
 
     private Color _barColor;
@@ -77,7 +77,7 @@ namespace Zeroit.Framework.UIThemes.EightBall
         }
     }
 
-    public EightBallProgressbar()
+    public ExonBlazeProgressbar()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
         Size = new Size(200, 26);

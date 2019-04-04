@@ -33,11 +33,11 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
     [DefaultEvent("TextChanged")]
-public class EightBallTextBox : Control
+public class ExonBlazeTextBox : Control
 {
 
     private int _MaxLength = 32767;
@@ -143,7 +143,7 @@ public class EightBallTextBox : Control
 
     private TextBox Base;
 
-    public EightBallTextBox()
+    public ExonBlazeTextBox()
     {
         Font = new Font("Arial", 9);
         ForeColor = Color.DimGray;

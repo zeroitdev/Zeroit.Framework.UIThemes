@@ -32,10 +32,10 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallSeperator : Control
+    public class ExonBlazeSeperator : Control
 {
 
     private bool _showText;
@@ -91,7 +91,7 @@ namespace Zeroit.Framework.UIThemes.EightBall
 
     }
 
-    public EightBallSeperator()
+    public ExonBlazeSeperator()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
         Size = new Size(200, 15);

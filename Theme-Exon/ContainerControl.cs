@@ -33,11 +33,11 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
     [ToolboxItem(false)]
-public class EightBallContainer : ContainerControl
+public class ExonBlazeContainer : ContainerControl
 {
 
     private int moveHeight = 39;
@@ -80,7 +80,7 @@ public class EightBallContainer : ContainerControl
         }
     }
 
-    public EightBallContainer()
+    public ExonBlazeContainer()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
         Dock = DockStyle.Fill;

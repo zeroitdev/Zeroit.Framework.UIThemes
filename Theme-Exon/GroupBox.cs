@@ -32,10 +32,10 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallGroupBox : ContainerControl
+    public class ExonBlazeGroupBox : ContainerControl
 {
 
     private HorizontalAlignment _titleAlign;
@@ -55,7 +55,7 @@ namespace Zeroit.Framework.UIThemes.EightBall
         Invalidate();
     }
 
-    public EightBallGroupBox()
+    public ExonBlazeGroupBox()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.ContainerControl, true);
         Size = new Size(300, 140);

@@ -30,7 +30,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
     static class Drawing

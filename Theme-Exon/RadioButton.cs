@@ -33,11 +33,11 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
     [DefaultEvent("CheckedChanged")]
-public class EightBallRadioButton : Control
+public class ExonBlazeRadioButton : Control
 {
 
     public event CheckedChangedEventHandler CheckedChanged;
@@ -60,7 +60,7 @@ public class EightBallRadioButton : Control
         Invalidate();
     }
 
-    public EightBallRadioButton()
+    public ExonBlazeRadioButton()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
         Size = new Size(140, 20);
@@ -99,9 +99,9 @@ public class EightBallRadioButton : Control
 
         foreach (Control C in Parent.Controls)
         {
-            if (!object.ReferenceEquals(C, this) && C is EightBallRadioButton)
+            if (!object.ReferenceEquals(C, this) && C is ExonBlazeRadioButton)
             {
-                ((EightBallRadioButton)C).Checked = false;
+                ((ExonBlazeRadioButton)C).Checked = false;
             }
         }
 

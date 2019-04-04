@@ -33,11 +33,11 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
     [DefaultEvent("CheckedChanged")]
-public class EightBallCheckBox : Control
+public class ExonBlazeCheckBox : Control
 {
 
     public event CheckedChangedEventHandler CheckedChanged;
@@ -60,7 +60,7 @@ public class EightBallCheckBox : Control
         Invalidate();
     }
 
-    public EightBallCheckBox()
+    public ExonBlazeCheckBox()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
         Size = new Size(150, 20);

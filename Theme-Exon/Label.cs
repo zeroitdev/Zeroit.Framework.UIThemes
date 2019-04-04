@@ -30,13 +30,13 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallLabel : Label
+    public class ExonBlazeLabel : Label
     {
 
-        public EightBallLabel()
+        public ExonBlazeLabel()
         {
             BackColor = Color.Transparent;
             ForeColor = Color.WhiteSmoke;

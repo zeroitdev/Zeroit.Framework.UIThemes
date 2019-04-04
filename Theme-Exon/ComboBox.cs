@@ -32,13 +32,13 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallComboBox : ComboBox
+    public class ExonBlazeComboBox : ComboBox
 {
 
-    public EightBallComboBox()
+    public ExonBlazeComboBox()
     {
         DrawItem += ReplaceItem;
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);

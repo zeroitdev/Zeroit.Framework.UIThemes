@@ -32,13 +32,13 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallTabControl : TabControl
+    public class ExonBlazeTabControl : TabControl
 {
 
-    public EightBallTabControl()
+    public ExonBlazeTabControl()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.ResizeRedraw | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
         Size = new Size(400, 200);

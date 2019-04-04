@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-17-2019
 // ***********************************************************************
-// <copyright file="VerticalSeperator.cs" company="Zeroit Dev Technologies">
+// <copyright file="GroupBox.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -34,34 +34,44 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchVerticalSeperator : Control
+    public class BambaraGroupBox : ContainerControl
     {
-
-        public ButterscotchVerticalSeperator()
-        {
-            SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
-            DoubleBuffered = true;
-            BackColor = Color.Transparent;
-            Size = new Size(3, 200);
-        }
 
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            Width = 3;
+            Invalidate();
+        }
+
+        public BambaraGroupBox()
+            : base()
+        {
+            SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
+            BackColor = Color.Transparent;
+            DoubleBuffered = true;
+            Size = new Size(240, 160);
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             Bitmap b = new Bitmap(Width, Height);
             Graphics g = Graphics.FromImage(b);
-            Rectangle rect = new Rectangle(0, 0, Width - 1, Height - 1);
+            Rectangle outerrect = new Rectangle(0, 0, Width - 1, Height - 1);
+            Rectangle innerrect = new Rectangle(3, 3, Width - 7, Height - 7);
+            Pen underlinepen = new Pen(Color.FromArgb(255, 255, 255), 2);
             base.OnPaint(e);
-            g.Clear(BackColor);
             g.SmoothingMode = SmoothingMode.HighQuality;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            g.FillPath(new SolidBrush(Color.FromArgb(26, 25, 21)), Draw.RoundRect(rect, 2));
-            g.DrawPath(new Pen(Color.FromArgb(0, 0, 0)), Draw.RoundRect(rect, 2));
+            g.Clear(BackColor);
+            g.FillPath(new SolidBrush(Color.FromArgb(26, 25, 21)), Draw.RoundRect(outerrect, 3));
+            LinearGradientBrush panelgb = new LinearGradientBrush(innerrect, Color.FromArgb(100, 90, 80), Color.FromArgb(48, 43, 39), 90);
+            g.FillPath(panelgb, Draw.RoundRect(innerrect, 3));
+            g.DrawString(Text, new Font("Segoe UI", 11, FontStyle.Bold), new SolidBrush(Color.FromArgb(255, 255, 255)), new Rectangle(0, 3, Width - 1, 30), new StringFormat
+            {
+                Alignment = StringAlignment.Center,
+                LineAlignment = StringAlignment.Center
+            });
+            g.DrawLine(underlinepen, 20, 30, Width - 21, 30);
             e.Graphics.DrawImage(b, new Point(0, 0));
             g.Dispose();
             b.Dispose();

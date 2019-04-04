@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-17-2019
 // ***********************************************************************
-// <copyright file="Butterscotch Theme.cs" company="Zeroit Dev Technologies">
+// <copyright file="Bambara Theme.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -90,7 +90,7 @@ namespace Zeroit.Framework.UIThemes.Butter
     }
 
     [ToolboxItem(false)]
-    public class ButterscotchTheme : ContainerControl
+    public class BambaraTheme : ContainerControl
     {
         private System.Windows.Forms.Timer withEventsField__mytimer;
         public System.Windows.Forms.Timer _mytimer
@@ -160,7 +160,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             }
         }
 
-        public ButterscotchTheme()
+        public BambaraTheme()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);

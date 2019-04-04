@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-17-2019
 // ***********************************************************************
-// <copyright file="Tab.cs" company="Zeroit Dev Technologies">
+// <copyright file="VerticalTab.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -33,15 +33,17 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchTabControl : TabControl
+    public class BambaraVerticalTabControl : TabControl
     {
 
-        public ButterscotchTabControl()
+        public BambaraVerticalTabControl()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
             BackColor = Color.Transparent;
             DoubleBuffered = true;
-            ItemSize = new Size(100, 35);
+            SizeMode = TabSizeMode.Fixed;
+            Alignment = TabAlignment.Left;
+            ItemSize = new Size(35, 100);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -62,28 +64,27 @@ namespace Zeroit.Framework.UIThemes.Butter
             g.DrawRectangle(new Pen(Brushes.Black), rect);
             for (int i = 0; i <= TabCount - 1; i++)
             {
-                Rectangle textRectangle = new Rectangle(new Point(GetTabRect(i).Location.X + 3, GetTabRect(i).Location.Y), new Size(GetTabRect(i).Width - 7, GetTabRect(i).Height));
+                Rectangle textRectangle = new Rectangle(new Point(GetTabRect(i).Location.X + 7, GetTabRect(i).Location.Y + 2), new Size(GetTabRect(i).Width - 15, GetTabRect(i).Height - 5));
                 if (i == SelectedIndex)
                 {
-                    Rectangle tabrect = new Rectangle(new Point(GetTabRect(i).Location.X + 1, GetTabRect(i).Location.Y), new Size(GetTabRect(i).Width - 2, GetTabRect(i).Height));
+                    Rectangle tabrect = new Rectangle(new Point(GetTabRect(i).Location.X + 2, GetTabRect(i).Location.Y + 1), new Size(GetTabRect(i).Width - 2, GetTabRect(i).Height - 3));
                     LinearGradientBrush buttonrect = new LinearGradientBrush(tabrect, Color.FromArgb(100, 90, 80), Color.FromArgb(48, 43, 39), 90);
                     g.FillPath(buttonrect, Draw.RoundRect(tabrect, 5));
                     g.DrawString(TabPages[i].Text, new Font("Segoe UI", 10, FontStyle.Bold), new SolidBrush(Color.FromArgb(25, 23, 22)), textRectangle, new StringFormat
                     {
                         LineAlignment = StringAlignment.Center,
-                        Alignment = StringAlignment.Near
+                        Alignment = StringAlignment.Center
                     });
                 }
                 else
                 {
-                    Rectangle tabrect = new Rectangle(new Point(GetTabRect(i).Location.X + 1, GetTabRect(i).Location.Y), new Size(GetTabRect(i).Width - 2, GetTabRect(i).Height));
+                    Rectangle tabrect = new Rectangle(new Point(GetTabRect(i).Location.X + 2, GetTabRect(i).Location.Y + 1), new Size(GetTabRect(i).Width - 2, GetTabRect(i).Height - 3));
                     LinearGradientBrush buttonrect = new LinearGradientBrush(tabrect, Color.FromArgb(57, 52, 46), Color.FromArgb(92, 83, 74), 90);
-
                     g.FillPath(buttonrect, Draw.RoundRect(tabrect, 5));
                     g.DrawString(TabPages[i].Text, new Font("Segoe UI", 10, FontStyle.Regular), new SolidBrush(Color.FromArgb(255, 255, 255)), textRectangle, new StringFormat
                     {
                         LineAlignment = StringAlignment.Center,
-                        Alignment = StringAlignment.Near
+                        Alignment = StringAlignment.Center
                     });
                 }
             }

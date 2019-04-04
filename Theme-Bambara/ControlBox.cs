@@ -34,7 +34,7 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchControlBox : Control
+    public class BambaraControlBox : Control
     {
         MouseState _state = MouseState.None;
         int _x;
@@ -125,7 +125,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             Invalidate();
         }
 
-        public ButterscotchControlBox()
+        public BambaraControlBox()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);

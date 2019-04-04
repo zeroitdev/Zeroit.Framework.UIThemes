@@ -35,7 +35,7 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchButton : Control
+    public class BambaraButton : Control
     {
         MouseState _state;
         protected override void OnMouseDown(MouseEventArgs e)
@@ -66,7 +66,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             Invalidate();
         }
 
-        public ButterscotchButton()
+        public BambaraButton()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
             BackColor = Color.Transparent;

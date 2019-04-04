@@ -34,9 +34,9 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchListBox : ListBox
+    public class BambaraListBox : ListBox
     {
-        public ButterscotchListBox()
+        public BambaraListBox()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             BackColor = Color.Transparent;

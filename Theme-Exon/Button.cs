@@ -33,10 +33,10 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Zeroit.Framework.UIThemes.EightBall
+namespace Zeroit.Framework.UIThemes.ExonBlaze
 {
 
-    public class EightBallButton : Control
+    public class ExonBlazeButton : Control
 {
 
 
@@ -246,7 +246,7 @@ namespace Zeroit.Framework.UIThemes.EightBall
         Invalidate();
     }
 
-    public EightBallButton()
+    public ExonBlazeButton()
     {
         SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw, true);
         Font = new Font("Segoe UI", 9);

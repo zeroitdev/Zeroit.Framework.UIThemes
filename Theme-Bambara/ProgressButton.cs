@@ -36,7 +36,7 @@ using System.Windows.Forms;
 namespace Zeroit.Framework.UIThemes.Butter
 {
 
-    public class ButterscotchProgressButton : Control
+    public class BambaraProgressButton : Control
     {
         MouseState _state;
         private int _val;
@@ -110,7 +110,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             _state = MouseState.None;
             Invalidate();
         }
-        public ButterscotchProgressButton()
+        public BambaraProgressButton()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);

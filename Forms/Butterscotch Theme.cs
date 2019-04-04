@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 02-18-2019
 // ***********************************************************************
-// <copyright file="Butterscotch Theme.cs" company="Zeroit Dev Technologies">
+// <copyright file="Bambara Theme.cs" company="Zeroit Dev Technologies">
 //     Copyright © Zeroit Dev Technologies  2017. All Rights Reserved.
 // </copyright>
 // <summary></summary>
@@ -72,7 +72,7 @@ namespace Zeroit.Framework.Form.UIThemes.Butter
         }
     }
 
-    public class ButterscotchTheme : ContainerControl
+    public class BambaraTheme : ContainerControl
     {
         private System.Windows.Forms.Timer withEventsField__mytimer;
         public System.Windows.Forms.Timer _mytimer
@@ -142,7 +142,7 @@ namespace Zeroit.Framework.Form.UIThemes.Butter
             }
         }
 
-        public ButterscotchTheme()
+        public BambaraTheme()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);

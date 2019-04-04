@@ -34,7 +34,7 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchComboBox : ComboBox
+    public class BambaraComboBox : ComboBox
     {
         private int _startIndex = 0;
         private int StartIndex
@@ -82,7 +82,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             }
         }
 
-        public ButterscotchComboBox()
+        public BambaraComboBox()
             : base()
         {
             DrawItem += ReplaceItem;

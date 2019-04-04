@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-17-2019
 // ***********************************************************************
-// <copyright file="VerticalProgress.cs" company="Zeroit Dev Technologies">
+// <copyright file="Toggle.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -34,102 +34,66 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchVerticalProgressBar : Control
+    public class BambaraToggle : Control
     {
-        private int _val;
-        public int Value
+
+        private bool _check;
+        public bool Checked
         {
-            get { return _val; }
+            get { return _check; }
             set
             {
-                if (value > _max)
-                {
-                    _val = _max;
-                }
-                else if (value < 0)
-                {
-                    _val = 0;
-                }
-                else
-                {
-                    _val = value;
-                }
+                _check = value;
                 Invalidate();
             }
         }
 
-        private int _max;
-        public int Maximum
-        {
-            get { return _max; }
-            set
-            {
-                if (value < 1)
-                {
-                    _max = 1;
-                }
-                else
-                {
-                    _max = value;
-                }
-                if (value < _val)
-                {
-                    _val = _max;
-                }
-                Invalidate();
-            }
-        }
-
-        private bool _showPercentage = false;
-        public bool ShowPercentage
-        {
-            get { return _showPercentage; }
-            set
-            {
-                _showPercentage = value;
-                Invalidate();
-            }
-        }
-
-        public ButterscotchVerticalProgressBar()
+        public BambaraToggle()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
-            BackColor = Color.Transparent;
-            Size = new Size(20, 250);
             DoubleBuffered = true;
-            _max = 100;
+            BackColor = Color.Transparent;
+            Size = new Size(80, 25);
+        }
+
+        protected override void OnClick(EventArgs e)
+        {
+            base.OnClick(e);
+            if (!Checked)
+                Checked = true;
+            else
+                Checked = false;
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             Bitmap b = new Bitmap(Width, Height);
             Graphics g = Graphics.FromImage(b);
-            int percent = Convert.ToInt32((Height - 1) * (_val / _max));
             Rectangle outerrect = new Rectangle(0, 0, Width - 1, Height - 1);
             Rectangle maininnerrect = new Rectangle(7, 7, Width - 15, Height - 15);
-            Rectangle innerrect = new Rectangle(4, (Height - percent) + 4, Width - 9, percent - 9);
+            LinearGradientBrush buttonrect = new LinearGradientBrush(outerrect, Color.FromArgb(100, 90, 80), Color.FromArgb(48, 43, 39), 90);
             base.OnPaint(e);
             g.Clear(BackColor);
             g.SmoothingMode = SmoothingMode.HighQuality;
+            g.InterpolationMode = InterpolationMode.HighQualityBicubic;
             g.FillPath(new SolidBrush(Color.FromArgb(40, 37, 33)), Draw.RoundRect(outerrect, 5));
             g.DrawPath(new Pen(Color.FromArgb(0, 0, 0)), Draw.RoundRect(outerrect, 5));
             g.FillPath(new SolidBrush(Color.FromArgb(26, 25, 21)), Draw.RoundRect(maininnerrect, 3));
             g.DrawPath(new Pen(Color.FromArgb(0, 0, 0)), Draw.RoundRect(maininnerrect, 3));
-            if (percent != 0)
+            if (Checked)
             {
-                try
+                g.FillPath(buttonrect, Draw.RoundRect(new Rectangle(3, 3, Convert.ToInt32((Width / 2) - 3), Height - 7), 7));
+                g.DrawString("ON", new Font("Segoe UI", 10, FontStyle.Bold), new SolidBrush(Color.FromArgb(246, 180, 12)), new Rectangle(2, 2, Convert.ToInt32((Width / 2) - 1), Height - 5), new StringFormat
                 {
-                    LinearGradientBrush progressgb = new LinearGradientBrush(innerrect, Color.FromArgb(91, 82, 73), Color.FromArgb(57, 52, 46), 90);
-                    g.FillPath(progressgb, Draw.RoundRect(innerrect, 7));
-                }
-                catch
-                {
-                }
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center
+                });
             }
-            if (_showPercentage)
+            else
             {
-                g.DrawString(string.Format("{0}%", _val), new Font("Segoe UI", 8, FontStyle.Bold), new SolidBrush(Color.FromArgb(246, 180, 12)), outerrect, new StringFormat
+                g.FillPath(buttonrect, Draw.RoundRect(new Rectangle(Convert.ToInt32((Width / 2) - 3), 3, Convert.ToInt32((Width / 2) - 3), Height - 7), 7));
+                g.DrawString("OFF", new Font("Segoe UI", 10, FontStyle.Bold), new SolidBrush(Color.FromArgb(246, 180, 12)), new Rectangle(Convert.ToInt32((Width / 2) - 2), 2, Convert.ToInt32((Width / 2) - 1), Height - 5), new StringFormat
                 {
                     Alignment = StringAlignment.Center,
                     LineAlignment = StringAlignment.Center

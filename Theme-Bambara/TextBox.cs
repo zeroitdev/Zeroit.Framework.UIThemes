@@ -35,7 +35,7 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchTextBox : Control
+    public class BambaraTextBox : Control
     {
         private TextBox withEventsField__tb = new TextBox();
         public TextBox _tb
@@ -171,7 +171,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             _with1.UseSystemPasswordChar = UseSystemPasswordChar;
         }
 
-        public ButterscotchTextBox()
+        public BambaraTextBox()
             : base()
         {
             TextChanged += TextChng;

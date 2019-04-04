@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-17-2019
 // ***********************************************************************
-// <copyright file="Toggle.cs" company="Zeroit Dev Technologies">
+// <copyright file="RadioButton.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -30,13 +30,13 @@
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchToggle : Control
+    public class BambaraRadioButton : Control
     {
-
         private bool _check;
         public bool Checked
         {
@@ -48,13 +48,19 @@ namespace Zeroit.Framework.UIThemes.Butter
             }
         }
 
-        public ButterscotchToggle()
+        public BambaraRadioButton()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
-            DoubleBuffered = true;
             BackColor = Color.Transparent;
-            Size = new Size(80, 25);
+            DoubleBuffered = true;
+            Size = new Size(180, 25);
+        }
+
+        protected override void OnTextChanged(EventArgs e)
+        {
+            base.OnTextChanged(e);
+            Invalidate();
         }
 
         protected override void OnClick(EventArgs e)
@@ -62,42 +68,40 @@ namespace Zeroit.Framework.UIThemes.Butter
             base.OnClick(e);
             if (!Checked)
                 Checked = true;
-            else
-                Checked = false;
+            foreach (BambaraRadioButton ctrl in Controls) /*from ctrl1 in Parent.Controls.OfType<BambaraRadioButton>() where ctrl1.Handle != Handlewhere ctrl1.Enabled)*/
+            {
+                ctrl.Checked = false;
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             Bitmap b = new Bitmap(Width, Height);
             Graphics g = Graphics.FromImage(b);
-            Rectangle outerrect = new Rectangle(0, 0, Width - 1, Height - 1);
-            Rectangle maininnerrect = new Rectangle(7, 7, Width - 15, Height - 15);
-            LinearGradientBrush buttonrect = new LinearGradientBrush(outerrect, Color.FromArgb(100, 90, 80), Color.FromArgb(48, 43, 39), 90);
+            Rectangle selectionrect = new Rectangle(3, 3, 18, 18);
+            Rectangle innerselectionrect = new Rectangle(4, 4, 17, 17);
+            Rectangle selectrect = new Rectangle(8, 8, 8, 8);
             base.OnPaint(e);
-            g.Clear(BackColor);
             g.SmoothingMode = SmoothingMode.HighQuality;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            g.FillPath(new SolidBrush(Color.FromArgb(40, 37, 33)), Draw.RoundRect(outerrect, 5));
-            g.DrawPath(new Pen(Color.FromArgb(0, 0, 0)), Draw.RoundRect(outerrect, 5));
-            g.FillPath(new SolidBrush(Color.FromArgb(26, 25, 21)), Draw.RoundRect(maininnerrect, 3));
-            g.DrawPath(new Pen(Color.FromArgb(0, 0, 0)), Draw.RoundRect(maininnerrect, 3));
+            g.TextRenderingHint = TextRenderingHint.AntiAlias;
+            g.Clear(BackColor);
+            g.DrawString(Text, new Font("Segoe UI", 11, FontStyle.Regular), new SolidBrush(Color.FromArgb(245, 245, 245)), new Rectangle(25, 4, Width, 16), new StringFormat
+            {
+                Alignment = StringAlignment.Center,
+                LineAlignment = StringAlignment.Center
+            });
             if (Checked)
             {
-                g.FillPath(buttonrect, Draw.RoundRect(new Rectangle(3, 3, Convert.ToInt32((Width / 2) - 3), Height - 7), 7));
-                g.DrawString("ON", new Font("Segoe UI", 10, FontStyle.Bold), new SolidBrush(Color.FromArgb(246, 180, 12)), new Rectangle(2, 2, Convert.ToInt32((Width / 2) - 1), Height - 5), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                g.FillEllipse(new SolidBrush(Color.FromArgb(0, 0, 0)), selectionrect);
+                g.FillEllipse(new SolidBrush(Color.FromArgb(40, 37, 33)), innerselectionrect);
+                g.FillEllipse(new SolidBrush(Color.FromArgb(246, 180, 12)), selectrect);
             }
             else
             {
-                g.FillPath(buttonrect, Draw.RoundRect(new Rectangle(Convert.ToInt32((Width / 2) - 3), 3, Convert.ToInt32((Width / 2) - 3), Height - 7), 7));
-                g.DrawString("OFF", new Font("Segoe UI", 10, FontStyle.Bold), new SolidBrush(Color.FromArgb(246, 180, 12)), new Rectangle(Convert.ToInt32((Width / 2) - 2), 2, Convert.ToInt32((Width / 2) - 1), Height - 5), new StringFormat
-                {
-                    Alignment = StringAlignment.Center,
-                    LineAlignment = StringAlignment.Center
-                });
+                g.FillEllipse(new SolidBrush(Color.FromArgb(0, 0, 0)), selectionrect);
+                g.FillEllipse(new SolidBrush(Color.FromArgb(40, 37, 33)), innerselectionrect);
+                g.FillEllipse(new SolidBrush(Color.FromArgb(20, 18, 17)), selectrect);
             }
             e.Graphics.DrawImage(b, new Point(0, 0));
             g.Dispose();

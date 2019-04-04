@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-17-2019
 // ***********************************************************************
-// <copyright file="RadioButton.cs" company="Zeroit Dev Technologies">
+// <copyright file="CheckBox.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -35,7 +35,7 @@ using System.Windows.Forms;
 
 namespace Zeroit.Framework.UIThemes.Butter
 {
-    public class ButterscotchRadioButton : Control
+    public class BambaraCheckBox : Control
     {
         private bool _check;
         public bool Checked
@@ -48,7 +48,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             }
         }
 
-        public ButterscotchRadioButton()
+        public BambaraCheckBox()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);
@@ -68,10 +68,8 @@ namespace Zeroit.Framework.UIThemes.Butter
             base.OnClick(e);
             if (!Checked)
                 Checked = true;
-            foreach (ButterscotchRadioButton ctrl in Controls) /*from ctrl1 in Parent.Controls.OfType<ButterscotchRadioButton>() where ctrl1.Handle != Handlewhere ctrl1.Enabled)*/
-            {
-                ctrl.Checked = false;
-            }
+            else
+                Checked = false;
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -80,28 +78,36 @@ namespace Zeroit.Framework.UIThemes.Butter
             Graphics g = Graphics.FromImage(b);
             Rectangle selectionrect = new Rectangle(3, 3, 18, 18);
             Rectangle innerselectionrect = new Rectangle(4, 4, 17, 17);
-            Rectangle selectrect = new Rectangle(8, 8, 8, 8);
+            Rectangle selectrect = new Rectangle(6, 6, 16, 16);
             base.OnPaint(e);
             g.SmoothingMode = SmoothingMode.HighQuality;
             g.InterpolationMode = InterpolationMode.HighQualityBicubic;
             g.TextRenderingHint = TextRenderingHint.AntiAlias;
             g.Clear(BackColor);
-            g.DrawString(Text, new Font("Segoe UI", 11, FontStyle.Regular), new SolidBrush(Color.FromArgb(245, 245, 245)), new Rectangle(25, 4, Width, 16), new StringFormat
+            g.DrawString(Text, new Font("Segoe UI", 11, FontStyle.Regular), new SolidBrush(Color.FromArgb(245, 245, 245)), new Rectangle(20, 4, Width, 16), new StringFormat
             {
                 Alignment = StringAlignment.Center,
                 LineAlignment = StringAlignment.Center
             });
             if (Checked)
             {
-                g.FillEllipse(new SolidBrush(Color.FromArgb(0, 0, 0)), selectionrect);
-                g.FillEllipse(new SolidBrush(Color.FromArgb(40, 37, 33)), innerselectionrect);
-                g.FillEllipse(new SolidBrush(Color.FromArgb(246, 180, 12)), selectrect);
+                g.FillRectangle(new SolidBrush(Color.FromArgb(0, 0, 0)), selectionrect);
+                g.FillRectangle(new SolidBrush(Color.FromArgb(40, 37, 33)), innerselectionrect);
+                g.DrawString("b", new Font("Marlett", 15, FontStyle.Bold), new SolidBrush(Color.FromArgb(246, 180, 12)), selectrect, new StringFormat
+                {
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center
+                });
             }
             else
             {
-                g.FillEllipse(new SolidBrush(Color.FromArgb(0, 0, 0)), selectionrect);
-                g.FillEllipse(new SolidBrush(Color.FromArgb(40, 37, 33)), innerselectionrect);
-                g.FillEllipse(new SolidBrush(Color.FromArgb(20, 18, 17)), selectrect);
+                g.FillRectangle(new SolidBrush(Color.FromArgb(0, 0, 0)), selectionrect);
+                g.FillRectangle(new SolidBrush(Color.FromArgb(40, 37, 33)), innerselectionrect);
+                g.DrawString("b", new Font("Marlett", 15, FontStyle.Bold), new SolidBrush(Color.FromArgb(20, 18, 17)), selectrect, new StringFormat
+                {
+                    Alignment = StringAlignment.Center,
+                    LineAlignment = StringAlignment.Center
+                });
             }
             e.Graphics.DrawImage(b, new Point(0, 0));
             g.Dispose();

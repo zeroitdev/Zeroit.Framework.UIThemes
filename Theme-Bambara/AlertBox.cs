@@ -36,7 +36,7 @@ using System.Windows.Forms;
 namespace Zeroit.Framework.UIThemes.Butter
 {
 
-    public class ButterscotchAlertBox : Control
+    public class BambaraAlertBox : Control
     {
         private System.Windows.Forms.Timer withEventsField__mytimer;
         public System.Windows.Forms.Timer _mytimer
@@ -105,7 +105,7 @@ namespace Zeroit.Framework.UIThemes.Butter
             _mytimer.Enabled = true;
         }
 
-        public ButterscotchAlertBox()
+        public BambaraAlertBox()
             : base()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor, true);

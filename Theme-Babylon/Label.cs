@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="InfoIcon.cs" company="Zeroit Dev Technologies">
+// <copyright file="Label.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,28 +36,17 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  Info Icon 
+    #region  Label 
 
-    public class iTalkIconInfo : Control
+    public class BabylonLabel : Label
     {
-        public iTalkIconInfo()
+        public BabylonLabel()
         {
-            this.ForeColor = Color.DimGray;
-            this.BackColor = Color.FromArgb(246, 246, 246);
-            this.Size = new Size(33, 33);
-            DoubleBuffered = true;
-        }
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            e.Graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
-
-            e.Graphics.FillEllipse(new SolidBrush(Color.Gray), new Rectangle(1, 1, 29, 29));
-            e.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(246, 246, 246)), new Rectangle(3, 3, 25, 25));
-
-            e.Graphics.DrawString("¡", new Font("Segoe UI", 25F, FontStyle.Bold), new SolidBrush(Color.Gray), new Rectangle(4, -14, Width, 43), new StringFormat() { Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Near });
+            Font = new Font("Segoe UI", 8);
+            ForeColor = Color.FromArgb(142, 142, 142);
+            BackColor = Color.Transparent;
         }
     }
 

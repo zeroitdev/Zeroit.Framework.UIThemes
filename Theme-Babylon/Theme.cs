@@ -36,7 +36,7 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
 
     #region  RoundRect 
@@ -701,7 +701,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
     #endregion
     #region  ThemeContainer 
 
-	    public class iTalkThemeContainer : ContainerControl
+	    public class BabylonThemeContainer : ContainerControl
 	    {
 
     #region  Variables 
@@ -1108,7 +1108,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 			    base.CreateHandle();
 		    }
 
-		    public iTalkThemeContainer() : base()
+		    public BabylonThemeContainer() : base()
 		    {
 			    SetStyle((ControlStyles)139270, true);
 			    Dock = DockStyle.Fill;

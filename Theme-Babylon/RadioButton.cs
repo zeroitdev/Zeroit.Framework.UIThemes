@@ -36,12 +36,12 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  RadioButton 
 
     [DefaultEvent("CheckedChanged")]
-    public class iTalkRadioButton : Control
+    public class BabylonRadioButton : Control
     {
         #region  Enums 
 
@@ -105,7 +105,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkRadioButton()
+        public BabylonRadioButton()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
             BackColor = Color.Transparent;
@@ -122,9 +122,9 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
             foreach (Control _Control in Parent.Controls)
             {
-                if (_Control != this && _Control is iTalkRadioButton)
+                if (_Control != this && _Control is BabylonRadioButton)
                 {
-                    ((iTalkRadioButton)_Control).Checked = false;
+                    ((BabylonRadioButton)_Control).Checked = false;
                 }
             }
         }

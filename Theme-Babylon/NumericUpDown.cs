@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  NumericUpDown 
 
-    public class iTalkNumericUpDown : Control
+    public class BabylonNumericUpDown : Control
     {
         #region  Enums 
 
@@ -255,7 +255,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkNumericUpDown()
+        public BabylonNumericUpDown()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             SetStyle(ControlStyles.UserPaint, true);

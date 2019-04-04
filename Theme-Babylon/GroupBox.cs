@@ -36,13 +36,13 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  GroupBox 
 
-    public class iTalkGroupBox : ContainerControl
+    public class BabylonGroupBox : ContainerControl
     {
-        public iTalkGroupBox()
+        public BabylonGroupBox()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.SupportsTransparentBackColor, true);
             BackColor = Color.Transparent;

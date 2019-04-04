@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="ChatBubbleRight.cs" company="Zeroit Dev Technologies">
+// <copyright file="ChatBubbleLeft.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,17 +36,17 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  Right Chat Bubble 
+    #region  Left Chat Bubble 
 
-    public class iTalkChatBubbleR : Control
+    public class BabylonChatBubbleL : Control
     {
         #region  Variables 
 
         private GraphicsPath Shape;
         private Color _TextColor = Color.FromArgb(52, 52, 52);
-        private Color _BubbleColor = Color.FromArgb(192, 206, 215);
+        private Color _BubbleColor = Color.FromArgb(217, 217, 217);
         private bool _DrawBubbleArrow = true;
 
         #endregion
@@ -93,7 +93,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkChatBubbleR()
+        public BabylonChatBubbleL()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
             DoubleBuffered = true;
@@ -105,16 +105,16 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         protected override void OnResize(System.EventArgs e)
         {
-            base.OnResize(e);
             Shape = new GraphicsPath();
 
-            Shape.AddArc(0, 0, 10, 10, 180, 90);
-            Shape.AddArc(Width - 18, 0, 10, 10, -90, 90);
-            Shape.AddArc(Width - 18, Height - 11, 10, 10, 0, 90);
-            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
+            Shape.AddArc(9, 0, 10, 10, 180, 90);
+            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
+            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
+            Shape.AddArc(9, Height - 11, 10, 10, 90, 90);
             Shape.CloseAllFigures();
 
             Invalidate();
+            base.OnResize(e);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -128,19 +128,20 @@ namespace Zeroit.Framework.UIThemes.iTalk
             G.Clear(BackColor);
 
             G.FillPath(new SolidBrush(_BubbleColor), Shape); // Fill the body of the bubble with the specified color
-            G.DrawString(Text, Font, new SolidBrush(ForeColor), (new Rectangle(6, 4, Width - 15, Height)));
+            G.DrawString(Text, Font, new SolidBrush(ForeColor), new Rectangle(15, 4, Width - 17, Height - 5));
 
             // Draw a polygon on the right side of the bubble
             if (_DrawBubbleArrow == true)
             {
                 Point[] p = {
-                    new Point(Width - 8, Height - 19),
-                    new Point(Width, Height - 25),
-                    new Point(Width - 8, Height - 30)
+                    new Point(9, Height - 19),
+                    new Point(0, Height - 25),
+                    new Point(9, Height - 30)
                 };
                 G.FillPolygon(new SolidBrush(_BubbleColor), p);
                 G.DrawPolygon(new Pen(new SolidBrush(_BubbleColor)), p);
             }
+
             G.Dispose();
             e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
             e.Graphics.DrawImageUnscaled(B, 0, 0);

@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  TabControl 
 
-    public class iTalkTabControl : TabControl
+    public class BabylonTabControl : TabControl
     {
         // NOTE: For best quality icons/images on the TabControl; from the associated ImageList, set
         // the image size (24,24) so it can fit in the tab rectangle. However, to ensure a
@@ -51,7 +51,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
         // Wireframe Toolbar Icons by Gentleface. Licensed under Creative Commons Attribution.
         // Check it out from here: http://www.gentleface.com/free_icon_set.html
 
-        public iTalkTabControl()
+        public BabylonTabControl()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer, true);
 

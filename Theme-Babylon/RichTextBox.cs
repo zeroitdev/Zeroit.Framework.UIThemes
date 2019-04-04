@@ -36,16 +36,16 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  RichTextBox 
 
     [DefaultEvent("TextChanged")]
-    public class iTalkRichTextBox : Control
+    public class BabylonRichTextBox : Control
     {
         #region  Variables 
 
-        public RichTextBox iTalkRTB = new RichTextBox();
+        public RichTextBox BabylonRTB = new RichTextBox();
         private bool _ReadOnly;
         private bool _WordWrap;
         private bool _AutoWordSelection;
@@ -58,11 +58,11 @@ namespace Zeroit.Framework.UIThemes.iTalk
         {
             get
             {
-                return iTalkRTB.Text;
+                return BabylonRTB.Text;
             }
             set
             {
-                iTalkRTB.Text = value;
+                BabylonRTB.Text = value;
                 Invalidate();
             }
         }
@@ -75,9 +75,9 @@ namespace Zeroit.Framework.UIThemes.iTalk
             set
             {
                 _ReadOnly = value;
-                if (iTalkRTB != null)
+                if (BabylonRTB != null)
                 {
-                    iTalkRTB.ReadOnly = value;
+                    BabylonRTB.ReadOnly = value;
                 }
             }
         }
@@ -90,9 +90,9 @@ namespace Zeroit.Framework.UIThemes.iTalk
             set
             {
                 _WordWrap = value;
-                if (iTalkRTB != null)
+                if (BabylonRTB != null)
                 {
-                    iTalkRTB.WordWrap = value;
+                    BabylonRTB.WordWrap = value;
                 }
             }
         }
@@ -105,9 +105,9 @@ namespace Zeroit.Framework.UIThemes.iTalk
             set
             {
                 _AutoWordSelection = value;
-                if (iTalkRTB != null)
+                if (BabylonRTB != null)
                 {
-                    iTalkRTB.AutoWordSelection = value;
+                    BabylonRTB.AutoWordSelection = value;
                 }
             }
         }
@@ -117,14 +117,14 @@ namespace Zeroit.Framework.UIThemes.iTalk
         protected override void OnForeColorChanged(System.EventArgs e)
         {
             base.OnForeColorChanged(e);
-            iTalkRTB.ForeColor = ForeColor;
+            BabylonRTB.ForeColor = ForeColor;
             Invalidate();
         }
 
         protected override void OnFontChanged(System.EventArgs e)
         {
             base.OnFontChanged(e);
-            iTalkRTB.Font = Font;
+            BabylonRTB.Font = Font;
         }
         protected override void OnPaintBackground(PaintEventArgs e)
         {
@@ -134,7 +134,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
         protected override void OnSizeChanged(System.EventArgs e)
         {
             base.OnSizeChanged(e);
-            iTalkRTB.Size = new Size(Width - 13, Height - 11);
+            BabylonRTB.Size = new Size(Width - 13, Height - 11);
         }
 
 
@@ -152,29 +152,29 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         public void _TextChanged(object sender, EventArgs e)
         {
-            iTalkRTB.Text = Text;
+            BabylonRTB.Text = Text;
         }
 
         #endregion
 
         public void AddRichTextBox()
         {
-            iTalkRTB.BackColor = Color.White;
-            iTalkRTB.Size = new Size(Width - 10, 100);
-            iTalkRTB.Location = new Point(7, 5);
-            iTalkRTB.Text = string.Empty;
-            iTalkRTB.BorderStyle = BorderStyle.None;
-            iTalkRTB.Font = new Font("Tahoma", 10);
-            iTalkRTB.Multiline = true;
+            BabylonRTB.BackColor = Color.White;
+            BabylonRTB.Size = new Size(Width - 10, 100);
+            BabylonRTB.Location = new Point(7, 5);
+            BabylonRTB.Text = string.Empty;
+            BabylonRTB.BorderStyle = BorderStyle.None;
+            BabylonRTB.Font = new Font("Tahoma", 10);
+            BabylonRTB.Multiline = true;
         }
 
-        public iTalkRichTextBox() : base()
+        public BabylonRichTextBox() : base()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             SetStyle(ControlStyles.UserPaint, true);
 
             AddRichTextBox();
-            Controls.Add(iTalkRTB);
+            Controls.Add(BabylonRTB);
             BackColor = Color.Transparent;
             ForeColor = Color.DimGray;
 

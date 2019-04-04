@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="Label.cs" company="Zeroit Dev Technologies">
+// <copyright file="LinkLabel.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,17 +36,19 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  Label 
-
-    public class iTalkLabel : Label
+    #region  Link Label 
+    public class BabylonLinkLabel : LinkLabel
     {
-        public iTalkLabel()
+        public BabylonLinkLabel()
         {
-            Font = new Font("Segoe UI", 8);
-            ForeColor = Color.FromArgb(142, 142, 142);
+            Font = new Font("Segoe UI", 8F, FontStyle.Regular);
             BackColor = Color.Transparent;
+            LinkColor = Color.FromArgb(51, 153, 225);
+            ActiveLinkColor = Color.FromArgb(0, 101, 202);
+            VisitedLinkColor = Color.FromArgb(0, 101, 202);
+            LinkBehavior = LinkBehavior.NeverUnderline;
         }
     }
 

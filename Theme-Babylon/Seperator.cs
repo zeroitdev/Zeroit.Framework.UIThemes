@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="Header.cs" company="Zeroit Dev Technologies">
+// <copyright file="Seperator.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,17 +36,41 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  Header Label 
+    #region  Separator 
 
-    public class iTalkHeaderLabel : Label
+    public class BabylonSeparator : Control
     {
-        public iTalkHeaderLabel()
+        private bool InstanceFieldsInitialized = false;
+
+        private void InitializeInstanceFields()
         {
-            Font = new Font("Segoe UI", 25F, FontStyle.Regular);
-            ForeColor = Color.FromArgb(80, 80, 80);
-            BackColor = Color.Transparent;
+            myPen = new Pen(myBrush);
+        }
+
+        #region  Variables 
+
+        private SolidBrush myBrush = new SolidBrush(Color.FromArgb(184, 183, 188));
+        private Pen myPen;
+
+        #endregion
+
+        public BabylonSeparator()
+        {
+            if (!InstanceFieldsInitialized)
+            {
+                InitializeInstanceFields();
+                InstanceFieldsInitialized = true;
+            }
+            SetStyle(ControlStyles.ResizeRedraw, true);
+            this.Size = new Size(120, 10);
+        }
+
+        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            e.Graphics.DrawLine(myPen, 0, 5, Width, 5); // Draw the line
         }
     }
 

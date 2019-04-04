@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  Circular ProgressBar 
 
-    public class iTalkProgressBar : Control
+    public class BabylonProgressBar : Control
     {
         #region  Enums 
 
@@ -157,7 +157,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkProgressBar()
+        public BabylonProgressBar()
         {
             Size = new Size(130, 130);
             Font = new Font("Segoe UI", 15);

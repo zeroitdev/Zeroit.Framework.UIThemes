@@ -36,12 +36,12 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  CheckBox 
 
     [DefaultEvent("CheckedChanged")]
-    public class iTalkCheckBox : Control
+    public class BabylonCheckBox : Control
     {
         #region  Variables 
 
@@ -73,7 +73,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkCheckBox()
+        public BabylonCheckBox()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
 

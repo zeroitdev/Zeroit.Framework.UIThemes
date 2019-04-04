@@ -36,12 +36,12 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  TrackBar 
 
     [DefaultEvent("ValueChanged")]
-    public class iTalkTrackBar : Control
+    public class BabylonTrackBar : Control
     {
         #region  Enums 
 
@@ -277,7 +277,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkTrackBar()
+        public BabylonTrackBar()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.DoubleBuffer, true);
 

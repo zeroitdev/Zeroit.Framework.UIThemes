@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="Panel.cs" company="Zeroit Dev Technologies">
+// <copyright file="ListView.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,52 +36,27 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  Panel 
+    #region  ListView 
 
-    public class iTalkPanel : ContainerControl
+    public class BabylonListview : ListView
     {
-        private GraphicsPath Shape;
+        [DllImport("uxtheme", CharSet = CharSet.Unicode)]
+        public extern static int SetWindowTheme(IntPtr hWnd, string textSubAppName, string textSubIdList);
 
-        public iTalkPanel()
+        public BabylonListview()
         {
-            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            SetStyle(ControlStyles.UserPaint, true);
-
-            BackColor = Color.Transparent;
-            this.Size = new Size(187, 117);
-            Padding = new Padding(5, 5, 5, 5);
-            DoubleBuffered = true;
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.DoubleBuffered = true;
+            HeaderStyle = ColumnHeaderStyle.Nonclickable;
+            BorderStyle = BorderStyle.None; // Add the control to Babylon_Panel then full-dock it
         }
 
-        protected override void OnResize(System.EventArgs e)
+        protected override void OnHandleCreated(EventArgs e)
         {
-            base.OnResize(e);
-
-            Shape = new GraphicsPath();
-            Shape.AddArc(0, 0, 10, 10, 180, 90);
-            Shape.AddArc(Width - 11, 0, 10, 10, -90, 90);
-            Shape.AddArc(Width - 11, Height - 11, 10, 10, 0, 90);
-            Shape.AddArc(0, Height - 11, 10, 10, 90, 90);
-            Shape.CloseAllFigures();
-        }
-
-        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            Bitmap B = new Bitmap(Width, Height);
-            var G = Graphics.FromImage(B);
-
-            G.SmoothingMode = SmoothingMode.HighQuality;
-
-            G.Clear(Color.Transparent); // Set control background to transparent
-            G.FillPath(Brushes.White, Shape); // Draw RTB background
-            G.DrawPath(new Pen(Color.FromArgb(180, 180, 180)), Shape); // Draw border
-
-            G.Dispose();
-            e.Graphics.DrawImage((Image)B.Clone(), 0, 0);
-            B.Dispose();
+            BabylonListview.SetWindowTheme(this.Handle, "explorer", null);
+            base.OnHandleCreated(e);
         }
     }
 

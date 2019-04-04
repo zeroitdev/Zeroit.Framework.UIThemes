@@ -36,12 +36,12 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  Toggle Button 
 
     [DefaultEvent("ToggledChanged")]
-    public class iTalkToggle : Control
+    public class BabylonToggle : Control
     {
         #region  Designer 
 
@@ -154,7 +154,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkToggle()
+        public BabylonToggle()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.DoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.UserPaint, true);
             SubscribeToEvents();

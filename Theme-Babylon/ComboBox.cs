@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  ComboBox 
 
-    public class iTalkComboBox : ComboBox
+    public class BabylonComboBox : ComboBox
     {
         #region  Variables 
 
@@ -118,7 +118,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkComboBox()
+        public BabylonComboBox()
         {
             SetStyle((ControlStyles)139286, true);
             SetStyle(ControlStyles.Selectable, false);

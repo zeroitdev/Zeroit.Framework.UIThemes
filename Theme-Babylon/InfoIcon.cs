@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="StatusStrip.cs" company="Zeroit Dev Technologies">
+// <copyright file="InfoIcon.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,28 +36,28 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  StatusStrip 
+    #region  Info Icon 
 
-    public class iTalkStatusStrip : StatusStrip
+    public class BabylonIconInfo : Control
     {
-        public iTalkStatusStrip()
+        public BabylonIconInfo()
         {
-            this.Renderer = new ControlRenderer();
-            SizingGrip = false;
+            this.ForeColor = Color.DimGray;
+            this.BackColor = Color.FromArgb(246, 246, 246);
+            this.Size = new Size(33, 33);
+            DoubleBuffered = true;
         }
-
-        public ControlRenderer Renderer
+        protected override void OnPaint(PaintEventArgs e)
         {
-            get
-            {
-                return (ControlRenderer)base.Renderer;
-            }
-            set
-            {
-                base.Renderer = value;
-            }
+            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            e.Graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+
+            e.Graphics.FillEllipse(new SolidBrush(Color.Gray), new Rectangle(1, 1, 29, 29));
+            e.Graphics.FillEllipse(new SolidBrush(Color.FromArgb(246, 246, 246)), new Rectangle(3, 3, 25, 25));
+
+            e.Graphics.DrawString("¡", new Font("Segoe UI", 25F, FontStyle.Bold), new SolidBrush(Color.Gray), new Rectangle(4, -14, Width, 43), new StringFormat() { Alignment = StringAlignment.Near, LineAlignment = StringAlignment.Near });
         }
     }
 

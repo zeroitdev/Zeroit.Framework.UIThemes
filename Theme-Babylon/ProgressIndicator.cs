@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  Progress Indicator 
 
-    public class iTalkProgressIndicator : Control
+    public class BabylonProgressIndicator : Control
     {
         #region  Variables 
 
@@ -131,7 +131,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkProgressIndicator()
+        public BabylonProgressIndicator()
         {
             this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
 

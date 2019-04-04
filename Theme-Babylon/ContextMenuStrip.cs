@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="MenuStrip.cs" company="Zeroit Dev Technologies">
+// <copyright file="ContextMenuStrip.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,13 +36,13 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  MenuStrip 
+    #region  ContextMenuStrip 
 
-    public class iTalkMenuStrip : MenuStrip
+    public class BabylonContextMenuStrip : ContextMenuStrip
     {
-        public iTalkMenuStrip()
+        public BabylonContextMenuStrip()
         {
             this.Renderer = new ControlRenderer();
         }
@@ -58,7 +58,6 @@ namespace Zeroit.Framework.UIThemes.iTalk
                 base.Renderer = value;
             }
         }
-
     }
 
     #endregion

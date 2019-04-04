@@ -36,13 +36,13 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  Tick Icon 
 
-    public class iTalkIconTick : Control
+    public class BabylonIconTick : Control
     {
-        public iTalkIconTick()
+        public BabylonIconTick()
         {
             this.ForeColor = Color.DimGray;
             this.BackColor = Color.FromArgb(246, 246, 246);

@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 03-18-2019
 // ***********************************************************************
-// <copyright file="Seperator.cs" company="Zeroit Dev Technologies">
+// <copyright file="MenuStrip.cs" company="Zeroit Dev Technologies">
 //    This program is for creating Theme controls.
 //    Copyright ©  2017  Zeroit Dev Technologies
 //
@@ -36,42 +36,29 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
-    #region  Separator 
+    #region  MenuStrip 
 
-    public class iTalkSeparator : Control
+    public class BabylonMenuStrip : MenuStrip
     {
-        private bool InstanceFieldsInitialized = false;
-
-        private void InitializeInstanceFields()
+        public BabylonMenuStrip()
         {
-            myPen = new Pen(myBrush);
+            this.Renderer = new ControlRenderer();
         }
 
-        #region  Variables 
-
-        private SolidBrush myBrush = new SolidBrush(Color.FromArgb(184, 183, 188));
-        private Pen myPen;
-
-        #endregion
-
-        public iTalkSeparator()
+        public ControlRenderer Renderer
         {
-            if (!InstanceFieldsInitialized)
+            get
             {
-                InitializeInstanceFields();
-                InstanceFieldsInitialized = true;
+                return (ControlRenderer)base.Renderer;
             }
-            SetStyle(ControlStyles.ResizeRedraw, true);
-            this.Size = new Size(120, 10);
+            set
+            {
+                base.Renderer = value;
+            }
         }
 
-        protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            e.Graphics.DrawLine(myPen, 0, 5, Width, 5); // Draw the line
-        }
     }
 
     #endregion

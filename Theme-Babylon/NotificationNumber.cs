@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  Notification Number 
 
-    public class iTalkNotificationNumber : Control
+    public class BabylonNotificationNumber : Control
     {
         #region  Variables 
 
@@ -94,7 +94,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkNotificationNumber()
+        public BabylonNotificationNumber()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             SetStyle(ControlStyles.UserPaint, true);

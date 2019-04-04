@@ -36,11 +36,11 @@ using System.Drawing.Text;
 using System.Windows.Forms;
 
 
-namespace Zeroit.Framework.UIThemes.iTalk
+namespace Zeroit.Framework.UIThemes.Babylon
 {
     #region  ControlBox 
 
-    public class iTalkControlBox : Control
+    public class BabylonControlBox : Control
     {
         #region  Enums 
 
@@ -116,7 +116,7 @@ namespace Zeroit.Framework.UIThemes.iTalk
 
         #endregion
 
-        public iTalkControlBox()
+        public BabylonControlBox()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
             BackColor = Color.Transparent;

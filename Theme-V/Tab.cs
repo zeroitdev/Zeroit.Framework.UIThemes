@@ -1,0 +1,231 @@
+﻿// ***********************************************************************
+// Assembly         : Zeroit.Framework.UIThemes
+// Author           : ZEROIT
+// Created          : 03-17-2019
+//
+// Last Modified By : ZEROIT
+// Last Modified On : 03-17-2019
+// ***********************************************************************
+// <copyright file="Tab.cs" company="Zeroit Dev Technologies">
+//     Copyright © Zeroit Dev Technologies  2017. All Rights Reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace Zeroit.Framework.UIThemes.V
+{
+
+    public class VTabControl : TabControl
+    {
+        int OldIndex;
+        private int _Speed = 10;
+        public int Speed
+        {
+            get { return _Speed; }
+            set
+            {
+                if (value > 20 | value < -20)
+                {
+                    MessageBox.Show("Speed needs to be in between -20 and 20.");
+                }
+                else
+                {
+                    _Speed = value;
+                }
+            }
+        }
+        private Color LightBlack = Color.FromArgb(18, 18, 18);
+        private Color LighterBlack = Color.FromArgb(21, 21, 21);
+        private LinearGradientBrush DrawGradientBrush;
+        private LinearGradientBrush DrawGradientBrush2;
+        private LinearGradientBrush DrawGradientBrushPen;
+        private LinearGradientBrush DrawGradientBrushTab;
+        private Color _ControlBColor;
+        public Color TabTextColor
+        {
+            get { return _ControlBColor; }
+            set
+            {
+                _ControlBColor = value;
+                Invalidate();
+            }
+        }
+        
+        public VTabControl()
+            : base()
+        {
+            SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.UserPaint, true);
+            TabTextColor = Color.White;
+        }
+        public void DoAnimationScrollDown(Control Control1, Control Control2)
+        {
+            Graphics G = Control1.CreateGraphics();
+            Bitmap P1 = new Bitmap(Control1.Width, Control1.Height);
+            Bitmap P2 = new Bitmap(Control2.Width, Control2.Height);
+            Control1.DrawToBitmap(P1, new Rectangle(0, 0, Control1.Width, Control1.Height));
+            Control2.DrawToBitmap(P2, new Rectangle(0, 0, Control2.Width, Control2.Height));
+            foreach (Control c in Control1.Controls)
+            {
+                c.Hide();
+            }
+            int Slide = Control1.Height - (Control1.Height % _Speed);
+            int a = 0;
+            for (a = 0; a <= Slide; a += _Speed)
+            {
+                G.DrawImage(P1, new Rectangle(0, a, Control1.Width, Control1.Height));
+                G.DrawImage(P2, new Rectangle(0, a - Control2.Height, Control2.Width, Control2.Height));
+            }
+            a = Control1.Width;
+            G.DrawImage(P1, new Rectangle(0, a, Control1.Width, Control1.Height));
+            G.DrawImage(P2, new Rectangle(0, a - Control2.Height, Control2.Width, Control2.Height));
+            SelectedTab = (TabPage)Control2;
+            foreach (Control c in Control2.Controls)
+            {
+                c.Show();
+            }
+            foreach (Control c in Control1.Controls)
+            {
+                c.Show();
+            }
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            Rectangle r2 = new Rectangle(2, 0, Width, 25);
+            Rectangle r3 = new Rectangle(2, 0, Width, 25);
+            e.Graphics.Clear(Color.FromArgb(18, 18, 18));
+            Rectangle ItemBounds = default(Rectangle);
+            SolidBrush TextBrush = new SolidBrush(Color.Empty);
+            SolidBrush TabBrush = new SolidBrush(Color.FromArgb(15, 15, 15));
+            DrawGradientBrush2 = new LinearGradientBrush(r3, Color.FromArgb(25, 25, 25), Color.FromArgb(42, 42, 42), LinearGradientMode.ForwardDiagonal);
+            e.Graphics.FillRectangle(DrawGradientBrush2, r2);
+            for (int TabItemIndex = 0; TabItemIndex <= this.TabCount - 1; TabItemIndex++)
+            {
+                ItemBounds = this.GetTabRect(TabItemIndex);
+
+                if (Convert.ToBoolean(TabItemIndex & 1))
+                {
+                    TabBrush.Color = Color.Transparent;
+                }
+                else
+                {
+                    TabBrush.Color = Color.Transparent;
+                }
+                e.Graphics.FillRectangle(TabBrush, ItemBounds);
+                Pen BorderPen = default(Pen);
+                if (TabItemIndex == SelectedIndex)
+                {
+                    BorderPen = new Pen(Color.Black, 1);
+                }
+                else
+                {
+                    BorderPen = new Pen(Color.Black, 1);
+                }
+                Rectangle rPen = new Rectangle(ItemBounds.Location.X + 3, ItemBounds.Location.Y + 0, ItemBounds.Width - 4, ItemBounds.Height - 2);
+                e.Graphics.DrawRectangle(BorderPen, rPen);
+                DrawGradientBrushPen = new LinearGradientBrush(rPen, Color.FromArgb(5, 5, 5), Color.FromArgb(24, 24, 24), LinearGradientMode.Vertical);
+                e.Graphics.FillRectangle(DrawGradientBrushPen, rPen);
+                BorderPen.Dispose();
+                StringFormat sf = new StringFormat();
+                sf.LineAlignment = StringAlignment.Center;
+                sf.Alignment = StringAlignment.Center;
+
+                if (this.SelectedIndex == TabItemIndex)
+                {
+                    TextBrush.Color = TabTextColor;
+                }
+                else
+                {
+                    TextBrush.Color = Color.Gray;
+                }
+                e.Graphics.DrawString(this.TabPages[TabItemIndex].Text, this.Font, TextBrush, new RectangleF(this.GetTabRect(TabItemIndex).Location.X + 3, GetTabRect(TabItemIndex).Location.Y + 0, GetTabRect(TabItemIndex).Width - 4, GetTabRect(TabItemIndex).Height - 2), sf);
+                try
+                {
+                    this.TabPages[TabItemIndex].BackColor = Color.FromArgb(15, 15, 15);
+
+                }
+                catch
+                {
+                }
+            }
+            try
+            {
+                foreach (TabPage Page in this.TabPages)
+                {
+                    Page.BorderStyle = BorderStyle.None;
+                }
+            }
+            catch
+            {
+            }
+            e.Graphics.DrawRectangle(new Pen(new SolidBrush(Color.FromArgb(255, Color.Black))), 2, 0, Width - 3, Height - 3);
+            e.Graphics.DrawRectangle(new Pen(new SolidBrush(LighterBlack)), new Rectangle(3, 24, Width - 5, Height - 28));
+            e.Graphics.DrawLine(new Pen(new SolidBrush(Color.FromArgb(255, Color.Black))), 2, 23, Width - 2, 23);
+            e.Graphics.DrawLine(new Pen(new SolidBrush(Color.FromArgb(35, 35, 35))), 0, 0, 1, 1);
+            e.Graphics.DrawLine(new Pen(new SolidBrush(Color.FromArgb(70, 70, 70))), 2, Height - 2, Width + 1, Height - 2);
+
+        }
+        protected override void OnSelecting(System.Windows.Forms.TabControlCancelEventArgs e)
+        {
+            if (OldIndex < e.TabPageIndex)
+            {
+                DoAnimationScrollUp(TabPages[OldIndex], TabPages[e.TabPageIndex]);
+            }
+            else
+            {
+                DoAnimationScrollDown(TabPages[OldIndex], TabPages[e.TabPageIndex]);
+            }
+        }
+        
+        protected override void OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs e)
+        {
+            OldIndex = e.TabPageIndex;
+        }
+        public void DoAnimationScrollUp(Control Control1, Control Control2)
+        {
+            Graphics G = Control1.CreateGraphics();
+            Bitmap P1 = new Bitmap(Control1.Width, Control1.Height);
+            Bitmap P2 = new Bitmap(Control2.Width, Control2.Height);
+            Control1.DrawToBitmap(P1, new Rectangle(0, 0, Control1.Width, Control1.Height));
+            Control2.DrawToBitmap(P2, new Rectangle(0, 0, Control2.Width, Control2.Height));
+
+            foreach (Control c in Control1.Controls)
+            {
+                c.Hide();
+            }
+            int Slide = Control1.Height - (Control1.Height % _Speed);
+            int a = 0;
+            for (a = 0; a >= -Slide; a += -_Speed)
+            {
+                G.DrawImage(P1, new Rectangle(0, a, Control1.Width, Control1.Height));
+                G.DrawImage(P2, new Rectangle(0, a + Control2.Height, Control2.Width, Control2.Height));
+            }
+            a = Control1.Width;
+            G.DrawImage(P1, new Rectangle(0, a, Control1.Width, Control1.Height));
+            G.DrawImage(P2, new Rectangle(0, a + Control2.Height, Control2.Width, Control2.Height));
+
+            SelectedTab = (TabPage)Control2;
+
+            foreach (Control c in Control2.Controls)
+            {
+                c.Show();
+            }
+
+            foreach (Control c in Control1.Controls)
+            {
+                c.Show();
+            }
+        }
+
+
+
+    }
+}
+
+
+
+

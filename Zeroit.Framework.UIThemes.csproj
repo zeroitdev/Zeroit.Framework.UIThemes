@@ -1,0 +1,4448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F348D584-C027-4C26-AF12-30B9BAED16D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Zeroit.Framework.UIThemes</RootNamespace>
+    <AssemblyName>Zeroit.Framework.UIThemes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Theme-Bonfire\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\Header.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\AlertBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Max.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Alert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\StickyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Numeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\ContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkFlat\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\Notification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Easy\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GrayBlue\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GrayBlue\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GrayBlue\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GrayBlue\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GrayBlue\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GrayBlue\Theme.cs" />
+    <Compile Include="Theme-GreyWash\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\Max.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HighRoller\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Header.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\BigTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\SmallTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ChatBubbleLeft.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ChatBubbleRight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\NotificationNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\CircularProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ProgressIndicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\MenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\ContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\StatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\InfoIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iTalk\TickIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Morphic\TextBox.cs" />
+    <Compile Include="Theme-Morphic\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\YesNoBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\ImprovedSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\TopTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\DigitalDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mpontuo\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\Image.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nexus\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Onyl\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Onyl\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Onyl\MessageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Onyl\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Onyl\Theme.cs" />
+    <Compile Include="Theme-Onyl\WarningMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\Header.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\ButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\ButtonNormal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\ButtonRound.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\StarRating.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Theme-PlayUI\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\HeaderLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\ProgressIndicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\Separator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\ThemeAmbience.cs" />
+    <Compile Include="Theme-Ambience\Togglebutton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ambience\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\SocialButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\LinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Header.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\NotificationBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MonoFlat\Theme.cs" />
+    <Compile Include="Theme-PlayUI\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\EmbeddedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\TabTop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\TabSide.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Preview\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Professional\BasicButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Professional\DescriptiveButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Professional\Message.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Professional\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\Max.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\VerticalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\HorizontalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\RadialProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\ListBoxWithScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Zeroit\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Alpha\Bar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Alpha\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Alpha\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Angel\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Anom\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Anom\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Anom\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Anom\TrippleCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Anom\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Anom\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\Switch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aresio\Theme.cs" />
+    <Compile Include="Theme-Aryan\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aryan\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aryan\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Aryan\Theme.cs" />
+    <Compile Include="Theme-Atrocity\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\CButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Atrocity\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Avatar\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Avatar\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Avatar\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Avatar\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Avatar\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-AVG\OrangeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-AVG\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-AVG\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-AVG\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-AVG\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Avira\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\BarTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BasicCode\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BetaBlue\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BetaBlue\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BetaBlue\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Beyond\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Beyond\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Beyond\Theme.cs" />
+    <Compile Include="Theme-Bionic\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bionic\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BitDefender\Theme.cs" />
+    <Compile Include="Theme-BlackShades\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\MultiLineTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlackShades\Theme.cs" />
+    <Compile Include="Theme-Black\ButtonA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Black\ButtonB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Black\ButtonC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Black\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Black\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bloody\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bloody\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bloody\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-BlueAndWhite\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Blue\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Blue\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Blue\ButtonA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Blue\ButtonB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Blue\ButtonC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Blue\Theme.cs" />
+    <Compile Include="Theme-Booster\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\RedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\MixedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\GrayProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\RedProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\ControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Booster\Theme.cs" />
+    <Compile Include="Theme-Border\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Border\ButtonSubText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Border\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Border\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bullion\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bullion\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bullion\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bullion\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\VerticalTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\VerticalProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\HorizontalSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\VerticalSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\ProgressButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\AlertBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ButterScotch\Theme.cs" />
+    <Compile Include="Theme-CarbonFibre\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\CustomBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\ControlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\SeperatorVertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\SeperatorHorizontal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CarbonFibre\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Chrome\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Chrome\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Chrome\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Chrome\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Chrome\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Chrome\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Clarity\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Classic\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Classic\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Classic\Theme.cs" />
+    <Compile Include="Theme-CocaCola\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CocaCola\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CocaCola\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CocaCola\XButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Complex\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Complex\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Complex\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkMatter\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-DarkMatter\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Desperate\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Desperate\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Desperate\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Desperate\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Destiny\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Destiny\Bar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Destiny\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Destiny\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Destiny\Title.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Drone\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Drone\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Drone\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Drone\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\ButtonBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\ButtonOrange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\ButtonGrey.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\ProgressBarBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\ProgressBarOrange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electric\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electric\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electric\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electric\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electrified\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electrified\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\DropDownSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\TitledListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\TabVertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\RadialProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Element\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\DropdownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\StatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\StatusLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\HeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empire\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empress\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empress\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empress\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Empress\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ETheme\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ETheme\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ETheme\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ETheme\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Evolve\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Evolve\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Evolve\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Evolve\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Evolve\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\CircleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\ButtonBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\ButtonWhite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Exotic\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Exotic\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Exotic\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Exotic\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Exotic\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\CloseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\TabVertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\ChatRightBubble.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\ChatLeftBubble.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\ProgressBar2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Facebook\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Fetus\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Fetus\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Fetus\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\H1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\H2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\Redirect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\SubTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\MainTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Max.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\ColorPalette.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\AlertBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\StickyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Numeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\ContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FlatUI\TreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Flow\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\VerticalLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Fusion\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Future\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\SideButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\MiddleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\TextBoxDark.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\TextBoxLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\TextBoxRound.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Genuine\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\TabLagFree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\ListBoxPretty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\ListBoxLessPretty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Gray\Theme.cs" />
+    <Compile Include="Theme-Green\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Green\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Green\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GTheme\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GTheme\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hero\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HF\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HF\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HF\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-HF\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\AlertBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iBlack\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-iBlack\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Imagine\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Imagine\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Imagine\ButtonWithIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Imagine\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Imagine\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\MultiLineTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influence\NumbericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Influx\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-InnerDarkness\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-InnerDarkness\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Insomia\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Insomia\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Intel\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-J\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-J\Progress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\ButtonWhite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\Minimize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\ButtonGreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Kaspersky\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Knight\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\Check.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\Switch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlRed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlGreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlYellow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlDark.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlGray.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ControlLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Light\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\PassTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\LogButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\NormalTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\RadialProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\ButtonWithProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Numeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\ColorTable.cs" />
+    <Compile Include="Theme-Login\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\TitledListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\OnOffSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Trackbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\VerticalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\HorizontalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\ListBoxWithScollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\TitledListBoxWithScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Login\Paginator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Loyal\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\ToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Meph\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Metal\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Metal\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Metal\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\StickyButton.cs" />
+    <Compile Include="Theme-MetroDisk\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\AlertBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Numeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\ContextmenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\TreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Icon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\LabelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Dialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\SimpleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\Minimize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Modern\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Modern\ButtonA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Modern\Progress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Modern\ProgressA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MPGH\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MPGH\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MPGH\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mumtz\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mumtz\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mumtz\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\Mini.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Nameless\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\ControlMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\ButtonGreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\ButtonBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\ButtonOrange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\ButtonPurple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\ButtonGrey.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NeoBux\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-CocaCola\Theme.cs" />
+    <Compile Include="Theme-Complex\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Crystal\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Cypher\Theme.cs" />
+    <Compile Include="Theme-DarkMatter\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Design\Theme.cs" />
+    <Compile Include="Theme-Destiny\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Deumos\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Doom\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Drone\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Earn\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Effectual\Theme.cs" />
+    <Compile Include="Theme-Electric\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Electrified\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Elegant\Theme.cs" />
+    <Compile Include="Theme-Empress\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-ETheme\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Evolve\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Excision\Theme.cs" />
+    <Compile Include="Theme-Facebook\Theme.cs" />
+    <Compile Include="Theme-Fetus\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-FireFox\Theme.cs" />
+    <Compile Include="Theme-FlatUI\Theme.cs" />
+    <Compile Include="Theme-Flow\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Theme\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Frog\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Fusion\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Future\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GameBooster\Theme.cs" />
+    <Compile Include="Theme-Genuine\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ghost\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Green\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hacker\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hex\Theme.cs" />
+    <Compile Include="Theme-HF\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Hura\Theme.cs" />
+    <Compile Include="Theme-iBlack\Theme.cs" />
+    <Compile Include="Theme-Influence\Theme.cs" />
+    <Compile Include="Theme-InnerDarkness\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Insomia\Theme.cs" />
+    <Compile Include="Theme-J\Theme.cs" />
+    <Compile Include="Theme-Login\Theme.cs" />
+    <Compile Include="Theme-Meph\Theme.cs" />
+    <Compile Include="Theme-Metal\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroUI\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-MetroDisk\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Modern\Theme.cs" />
+    <Compile Include="Theme-MPGH\Theme.cs" />
+    <Compile Include="Theme-Mumtz\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Mystic\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Kach.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\OnOffBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\ControlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\RandomPool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Keyboard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Paginator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\VerticalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\HorizontalScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\ColorTable.cs" />
+    <Compile Include="Theme-NetSeal\ListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NetSeal\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Imagine\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-NYX\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Orains\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PalaDin\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PalaDin\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PalaDin\ControlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PalaDin\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PalaDin\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-PalaDin\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Perplex\Theme.cs" />
+    <Compile Include="Theme-Positron\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\OnOff.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\Divider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Positron\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Prime\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Prime\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme-Purity\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Purity\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Purity\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Purity\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Purity\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\WhiteTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\WhiteProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Qube\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\MultiLineTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Reactor\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recuperare\Theme.cs" />
+    <Compile Include="Theme-RedDwagon\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RedDwagon\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RedDwagon\Line.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RedDwagon\Progress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RedDwagon\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RedDwagon\Theme.cs" />
+    <Compile Include="Theme-RockStar\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RockStar\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RockStar\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RockStar\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-RockStar\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sasi\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sasi\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sasi\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sasi\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sasi\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Secure\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Secure\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Secure\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sharp\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\Progress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\Alert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\BlockQuote.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\Block.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sidewinder\Theme.cs" />
+    <Compile Include="Theme-Simpla\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simpla\Theme.cs" />
+    <Compile Include="Theme-SimpleGray\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\3DBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\3DBarLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\ProgressBarLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimpleGray\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simplistic\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Simplistic\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\ProgressBarLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\3DBarLight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\3DBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SimplyGray\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Situtation\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Situtation\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Situtation\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\Progress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\Top.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SkyBase\Theme.cs" />
+    <Compile Include="Theme-SLC\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\ListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\ScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\OnOffBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SLC\ColorTable.cs" />
+    <Compile Include="Theme-SLC\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Somnium\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Minimize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-SpicyLips\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Steam\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Steam\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Steam\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Steam\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Steam\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Studio\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Studio\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Subspace\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Sugar\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-TeamViewer\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Tech\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Tech\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Tech\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Teen\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Tennis\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Tennis\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Tennis\Theme.cs" />
+    <Compile Include="Theme-Black\Theme.cs" />
+    <Compile Include="Theme-8Ball\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\ContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\Helper\Drawing.cs" />
+    <Compile Include="Theme-8Ball\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-8Ball\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Adobe\Box.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Adobe\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Adobe\Helper\Helper.cs" />
+    <Compile Include="Theme-Adobe\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Adobe\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Adobe\Theme.cs" />
+    <Compile Include="Theme-Adobe\TitleBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\BigButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\Helper\Helper.cs" />
+    <Compile Include="Theme-Advanced System Core\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\Switch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advanced System Core\ThemeContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advantium\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advantium\Check.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advantium\Helper\Helper.cs" />
+    <Compile Include="Theme-Advantium\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Advantium\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Origin\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Origin\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Origin\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Origin\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Origin\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Origin\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Patrick\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Patrick\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Patrick\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Patrick\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Patrick\Theme.cs" />
+    <Compile Include="Theme-Recon\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\Check.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Recon\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Redemption\Theme.cs" />
+    <Compile Include="Theme-Redemption\Toggle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\Advert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\Button2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\CallButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Skype\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Somnium\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Somnium\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Somnium\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Somnium\Theme.cs" />
+    <Compile Include="Theme-Storm\ButtonA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Storm\ButtonB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Storm\Theme.cs" />
+    <Compile Include="Theme-Teen\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\CollapseBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\WhiteTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\ColorSpace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\TrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\BigButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\ButtonOrange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\ButtonGray.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unclear\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Unique\Theme.cs" />
+    <Compile Include="Theme-Desperate\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Twitch\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Ubuntu\Theme.cs" />
+    <Compile Include="Forms\8Ball Theme.cs" />
+    <Compile Include="Forms\Adobe Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Advanced System Core Theme.cs" />
+    <Compile Include="Forms\Advantium Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Alpha Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Angel Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Anom Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Aryan Theme.cs" />
+    <Compile Include="Forms\Atrocity Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Avatar Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\AVG Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\BasicCode Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\BetaBlue Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Beyond Theme.cs" />
+    <Compile Include="Forms\Bionic Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\BitDefender Theme.cs" />
+    <Compile Include="Forms\BlackShades.cs" />
+    <Compile Include="Forms\Bloody Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Blue and White Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Blue Theme.cs" />
+    <Compile Include="Forms\Booster Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Border Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Bullion Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Butterscotch Theme.cs" />
+    <Compile Include="Forms\Carbon Fibre Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Chrome Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Clarity Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Classic Theme.cs" />
+    <Compile Include="Forms\Coca Cola Theme.cs" />
+    <Compile Include="Forms\Complex Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Crystal Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Cypher Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Cypherx Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\DarkMatter Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Design Theme.cs" />
+    <Compile Include="Forms\Destiny Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Deumos Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Doom Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Drone Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Earn Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\EffectualTheme.cs" />
+    <Compile Include="Forms\Electric Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Electrified Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Elegant Theme.cs" />
+    <Compile Include="Forms\Element Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Empire %28Tasty%29 Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Empress Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ETheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Evolve Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Excision Theme.cs" />
+    <Compile Include="Forms\Exotic Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Facebook Theme.cs" />
+    <Compile Include="Forms\Fetus Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FlatUI.cs" />
+    <Compile Include="Forms\Flow Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Frog Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Fusion Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Future Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\G Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\GameBoosterTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Genuine Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Ghost Theme v2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\GhostTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Gray Theme.cs" />
+    <Compile Include="Forms\Green Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Hacker Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Hero Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Hex Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\HF Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Huratheme.cs" />
+    <Compile Include="Forms\iBlack Theme.cs" />
+    <Compile Include="Forms\Influence.cs" />
+    <Compile Include="Forms\Influx Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\InnerDarkness Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Insomnia Theme.cs" />
+    <Compile Include="Forms\Intel Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\J Theme.cs" />
+    <Compile Include="Forms\Kaspersky Theme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Knight Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Light Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Login Theme.cs" />
+    <Compile Include="Forms\Loyal Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Meph Theme.cs" />
+    <Compile Include="Forms\Metal Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Metro UI Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MetroDisk Theme.cs" />
+    <Compile Include="Forms\Modern Theme.cs" />
+    <Compile Include="Forms\MPGH Theme.cs" />
+    <Compile Include="Forms\Mumtz Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Mystic Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\NamelessTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\NeoBux Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Net Seal Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\New Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\NYX Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\OrainsTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Origin Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\PalaDin V2 Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Patrick Theme.cs" />
+    <Compile Include="Forms\Perplex Theme.cs" />
+    <Compile Include="Forms\Positron Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Prime Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Purityx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Qube Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Reactor Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Recon Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RedDwagon Theme.cs" />
+    <Compile Include="Forms\Redemption Theme.cs" />
+    <Compile Include="Forms\Rockstar Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Sasi Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\SecureTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Sharp-Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Simpla Theme.cs" />
+    <Compile Include="Forms\SimpleGray Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Simplistic Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Simply Gray Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Situation Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Sky Base Theme.cs" />
+    <Compile Include="Forms\Skype Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\SLC Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Somnium Theme.cs" />
+    <Compile Include="Forms\Spicylips Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Steam Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Storm Theme.cs" />
+    <Compile Include="Forms\Studio Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Subspace Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Sugar Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Teamviewer Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Tech Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Teen Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Tennis Theme.cs" />
+    <Compile Include="Forms\The Black Theme.cs" />
+    <Compile Include="Forms\Thief3 Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Twitch Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Ubuntu Theme.cs" />
+    <Compile Include="Forms\Uclear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Uplay Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\V Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Visceral Theme.cs" />
+    <Compile Include="Forms\Vitality Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Vs Theme.cs" />
+    <Compile Include="Forms\White Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Winter Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Xbox Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Xtreme Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\xVisual Theme.cs" />
+    <Compile Include="Forms\YouTube Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Zeus Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-UPlay\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\ButtonBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\ButtonGreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\DropDownCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\GroupDropBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\GroupPanelBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\MultiTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VibeLander\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visceral\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visceral\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visceral\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visceral\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visceral\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Vitality\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VS\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VS\Theme.cs" />
+    <Compile Include="Theme-V\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-V\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visceral\Theme.cs" />
+    <Compile Include="Theme-Vitality\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-White\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-White\Button1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-White\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-White\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-White\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-White\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\ButtonBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\ButtonBlack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\ProgressBarBlack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\ProgressBarBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\RadioButtonBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\RadioButtonBlack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\CheckBoxBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\CheckBoxBlack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Winter\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XBox\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XBox\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XBox\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XBox\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XBox\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Xtreme\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\ControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\Header.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\Seperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-XVisual\Theme.cs" />
+    <Compile Include="Theme-YouTube\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-YouTube\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-YouTube\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Zeus\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Zeus\TopButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Zeus\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Zeus\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Zeus\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Bonfire\Theme.cs" />
+    <Compile Include="Theme-DarkFlat\Theme.cs" />
+    <Compile Include="Theme-Easy\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-GreyWash\Theme.cs" />
+    <Compile Include="Theme-iTalk\Theme.cs" />
+    <Compile Include="Theme-Morphic\Theme.cs" />
+    <Compile Include="Theme-Nexus\Theme.cs" />
+    <Compile Include="Theme-Mpontuo\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Professional\Theme.cs" />
+    <Compile Include="Theme-Preview\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Valley\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-Visible\Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme-VisualStudio\Theme.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Zeroit.Framework.UIThemes.nuspec" />
+    <None Include="ZeroitStrongKeys.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

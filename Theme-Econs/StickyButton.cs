@@ -1,6 +1,6 @@
-﻿namespace Zeroit.Framework.UIThemes.MetroDisk
+﻿namespace Zeroit.Framework.UIThemes.Econs
 {
-    //public class MetroDiskStickyButton : Control
+    //public class EconsStickyButton : Control
     //{
 
     //    #region " Variables"
@@ -115,7 +115,7 @@
     //    private Color _TextColor = Color.FromArgb(243, 243, 243);
     //    #endregion
 
-    //    public MetroDiskStickyButton()
+    //    public EconsStickyButton()
     //    {
     //        SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
     //        DoubleBuffered = true;

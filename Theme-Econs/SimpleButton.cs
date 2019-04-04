@@ -32,12 +32,12 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskSimpleButton : ThemeControl154
+    public class EconsSimpleButton : ThemeControl154
     {
 
-        public MetroDiskSimpleButton()
+        public EconsSimpleButton()
         {
             Font = new Font("Segoe UI", 9);
             SetColor("Gradient top normal", 237, 237, 237);

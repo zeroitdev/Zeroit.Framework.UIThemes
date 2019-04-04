@@ -32,14 +32,14 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
     [DefaultEvent("CheckedChanged")]
-    public class MetroDiskToggle : Control
+    public class EconsToggle : Control
     {
 
         #region " Variables"
@@ -149,7 +149,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color TextColor = Color.FromArgb(243, 243, 243);
         #endregion
 
-        public MetroDiskToggle()
+        public EconsToggle()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             DoubleBuffered = true;

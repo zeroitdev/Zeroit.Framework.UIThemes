@@ -31,13 +31,13 @@ using System;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskTreeView : TreeView
+    public class EconsTreeView : TreeView
     {
 
         #region " Variables"
@@ -91,7 +91,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _LineColor = Color.FromArgb(25, 27, 29);
         #endregion
 
-        public MetroDiskTreeView()
+        public EconsTreeView()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;

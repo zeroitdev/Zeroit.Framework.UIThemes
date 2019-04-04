@@ -6,7 +6,7 @@
 // Last Modified By : ZEROIT
 // Last Modified On : 02-18-2019
 // ***********************************************************************
-// <copyright file="MetroDisk Theme.cs" company="Zeroit Dev Technologies">
+// <copyright file="Econs Theme.cs" company="Zeroit Dev Technologies">
 //     Copyright © Zeroit Dev Technologies  2017. All Rights Reserved.
 // </copyright>
 // <summary></summary>
@@ -17,13 +17,13 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.Form.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.Form.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.IO;
 using System.Drawing.Imaging;
 
-namespace Zeroit.Framework.Form.UIThemes.MetroDisk
+namespace Zeroit.Framework.Form.UIThemes.Econs
 {
 
     
@@ -2548,7 +2548,7 @@ namespace Zeroit.Framework.Form.UIThemes.MetroDisk
     #endregion
 
 
-    public class MetroDisk : ContainerControl
+    public class Econs : ContainerControl
     {
 
         #region " Variables"
@@ -2698,7 +2698,7 @@ namespace Zeroit.Framework.Form.UIThemes.MetroDisk
 
         #endregion
 
-        public MetroDisk()
+        public Econs()
         {
             MouseDoubleClick += FormSkin_MouseDoubleClick;
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);

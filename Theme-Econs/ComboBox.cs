@@ -32,13 +32,13 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskComboBox : ComboBox
+    public class EconsComboBox : ComboBox
     {
 
         #region " Variables"
@@ -192,7 +192,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _HoverColor = Color.FromArgb(35, 168, 109);
         #endregion
 
-        public MetroDiskComboBox()
+        public EconsComboBox()
         {
             DrawItem += DrawItem_;
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);

@@ -32,14 +32,14 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
     [DefaultEvent("TextChanged")]
-    public class MetroDiskTextBox : Control
+    public class EconsTextBox : Control
     {
 
         #region " Variables"
@@ -278,7 +278,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _BorderColor = _FlatColor;
         #endregion
 
-        public MetroDiskTextBox()
+        public EconsTextBox()
         {
             if (_Theme == true)
             {

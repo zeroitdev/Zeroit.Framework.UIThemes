@@ -32,13 +32,13 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskButton : Control
+    public class EconsButton : Control
     {
 
         #region " Variables"
@@ -115,7 +115,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _TextColor = Color.FromArgb(243, 243, 243);
         #endregion
 
-        public MetroDiskButton()
+        public EconsButton()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             DoubleBuffered = true;

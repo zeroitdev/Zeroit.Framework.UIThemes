@@ -31,13 +31,13 @@ using System;
 using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskContextMenuStrip : ContextMenuStrip
+    public class EconsContextMenuStrip : ContextMenuStrip
     {
         private bool _LightTheme;
         public bool LightTheme
@@ -52,7 +52,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
             Invalidate();
         }
 
-        public MetroDiskContextMenuStrip() : base()
+        public EconsContextMenuStrip() : base()
         {
             Renderer = new ToolStripProfessionalRenderer(new TColorTable());
             ShowImageMargin = false;

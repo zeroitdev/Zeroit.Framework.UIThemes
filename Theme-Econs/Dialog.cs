@@ -31,14 +31,14 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
 
-    public class MetroDiskDialogSkin : ContainerControl
+    public class EconsDialogSkin : ContainerControl
     {
 
         #region " Variables"
@@ -50,7 +50,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Point MousePoint = new Point(0, 0);
         private int MoveHeight = 50;
         private Color _MDcolor;
-        private string _text = "MetroDisk by SilverMachine";
+        private string _text = "Econs by SilverMachine";
         private Font _Font = new Font("tahoma", 7);
         #endregion
         private Font __Font = new Font("Segoe UI", 18, FontStyle.Bold);
@@ -182,7 +182,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
 
         #endregion
 
-        public MetroDiskDialogSkin()
+        public EconsDialogSkin()
         {
             MouseDoubleClick += FormSkin_MouseDoubleClick;
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);

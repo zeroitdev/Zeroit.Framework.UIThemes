@@ -31,14 +31,14 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
 
-    public class MetroDiskGroupBox : ContainerControl
+    public class EconsGroupBox : ContainerControl
     {
 
         #region " Variables"
@@ -92,7 +92,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _BaseColor = Color.FromArgb(60, 70, 73);
         #endregion
 
-        public MetroDiskGroupBox()
+        public EconsGroupBox()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer | ControlStyles.SupportsTransparentBackColor, true);
             DoubleBuffered = true;

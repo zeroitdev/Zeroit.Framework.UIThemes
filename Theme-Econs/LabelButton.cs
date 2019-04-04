@@ -32,9 +32,9 @@ using System.Windows.Forms;
 using System.Drawing;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDisklblButton : Label
+    public class EconslblButton : Label
     {
 
         #region " Variables"
@@ -67,7 +67,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         #endregion
 
 
-        public MetroDisklblButton()
+        public EconslblButton()
         {
             MouseUp += Metro_MouseUp;
             MouseLeave += Metro_MouseLeave;

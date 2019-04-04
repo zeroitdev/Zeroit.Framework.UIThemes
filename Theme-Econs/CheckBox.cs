@@ -32,14 +32,14 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
     [DefaultEvent("CheckedChanged")]
-    public class MetroDiskCheckBox : Control
+    public class EconsCheckBox : Control
     {
 
         #region " Variables"
@@ -158,7 +158,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _TextColor;
         #endregion
 
-        public MetroDiskCheckBox()
+        public EconsCheckBox()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.OptimizedDoubleBuffer, true);
             DoubleBuffered = true;

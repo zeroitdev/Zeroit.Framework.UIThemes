@@ -32,9 +32,9 @@ using System.Windows.Forms;
 using System.Drawing;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskLabel : Label
+    public class EconsLabel : Label
     {
 
         protected override void OnTextChanged(EventArgs e)
@@ -43,7 +43,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
             Invalidate();
         }
 
-        public MetroDiskLabel()
+        public EconsLabel()
         {
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             Font = new Font("Segoe UI", 8);

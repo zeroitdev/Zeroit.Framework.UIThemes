@@ -32,13 +32,13 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-using static Zeroit.Framework.UIThemes.MetroDisk.Helpers;
+using static Zeroit.Framework.UIThemes.Econs.Helpers;
 using System.Drawing.Text;
 
 
-namespace Zeroit.Framework.UIThemes.MetroDisk
+namespace Zeroit.Framework.UIThemes.Econs
 {
-    public class MetroDiskListBox : Control
+    public class EconsListBox : Control
     {
 
         #region " Variables"
@@ -186,7 +186,7 @@ namespace Zeroit.Framework.UIThemes.MetroDisk
         private Color _SelectedColor = _FlatColor;
         #endregion
 
-        public MetroDiskListBox()
+        public EconsListBox()
         {
             if (_LightTheme)
             {
